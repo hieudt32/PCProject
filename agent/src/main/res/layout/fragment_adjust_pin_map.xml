@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/adjust_pin_hd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_right_text="@string/done"
+    app:custom_header_title="@string/adjust_pin"/>
+
+  <app.positiveculture.com.agent.customview.StepIndicatorHorizontal
+    android:id="@+id/adjust_pin_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <fragment
+    android:id="@+id/adjust_pin_map"
+    android:name="com.google.android.gms.maps.MapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>

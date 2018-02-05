@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/verify_signing_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/verify" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_8dp"
+    android:layout_marginEnd="@dimen/margin_8dp"
+    android:layout_marginStart="@dimen/margin_8dp"
+    android:layout_marginTop="@dimen/margin_12dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/verify_signing_property_name_tv"
+      style="@style/TextViewBase.TitleText"
+      android:layout_marginStart="@dimen/margin_16dp"
+      android:layout_marginTop="@dimen/margin_20dp"
+      android:text="@string/the_beaumont"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/verify_signing_property_address_tv"
+      style="@style/TextViewBase.ItemView"
+      android:layout_marginBottom="@dimen/margin_19dp"
+      android:layout_marginStart="@dimen/margin_16dp"
+      android:text="@string/_145_deveonshire_road" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_16dp"
+    android:layout_marginEnd="@dimen/margin_8dp"
+    android:layout_marginStart="@dimen/margin_8dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+      style="@style/TextViewBase.SignOTPSideTextView"
+      android:layout_width="match_parent"
+      android:layout_marginBottom="@dimen/margin_18dp"
+      android:layout_marginEnd="@dimen/margin_16dp"
+      android:layout_marginStart="@dimen/margin_16dp"
+      android:layout_marginTop="@dimen/margin_18dp"
+      android:id="@+id/verify_signing_message"
+      android:text="@string/verify_signing_desc" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/margin_16dp"
+      android:layout_marginStart="@dimen/margin_16dp"
+      android:background="@drawable/round_grey_corner_shape"
+      android:orientation="horizontal">
+
+      <TextView
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_19dp"
+        android:layout_weight="1"
+        android:id="@+id/verify_signing_des"
+        android:text="@string/check_before_verifying"
+        android:textColor="@color/tc_black87" />
+
+      <ImageView
+        android:id="@+id/verify_signing_check_iv"
+        android:layout_width="@dimen/size_22dp"
+        android:layout_height="@dimen/size_22dp"
+        android:layout_marginBottom="@dimen/margin_12dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginStart="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/margin_12dp"
+        android:src="@drawable/ic_radio_default" />
+
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_0dp"
+      android:layout_weight="1" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_1dp"
+      android:layout_marginEnd="@dimen/margin_8dp"
+      android:layout_marginStart="@dimen/margin_8dp"
+      android:background="@color/bg_grey" />
+
+    <customview.CustomButton
+      android:id="@+id/verify_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/margin_8dp"
+      app:custom_button_text="@string/verify" />
+
+  </LinearLayout>
+
+</LinearLayout>

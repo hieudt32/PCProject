@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog.Layout">
+
+  <LinearLayout
+      android:background="@drawable/bg_dialog_content"
+      android:layout_centerInParent="true"
+      android:orientation="vertical"
+      style="@style/Dialog.Content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/purchase_gift_image_iv"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/send_gift_infor_rl">
+      <font.app.gem.widget.ui.CFTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          android:id="@+id/confirm_purchase_tv"
+          android:textColor="@color/colorAccent"
+          android:layout_centerHorizontal="true"
+          android:text="@string/gift_deliver"/>
+      <font.app.gem.widget.ui.CFTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/test_send_gift"
+          android:layout_marginTop="8dp"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:id="@+id/purchase_gift_infor_tv"
+          android:textColor="@color/dialog_text_color"
+          android:layout_below="@+id/confirm_purchase_tv"/>
+    </RelativeLayout>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_submit_tv"
+        android:text="@string/bt_ok"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/padding_large"
+        style="@style/ButtonBase.Round.Pink"/>
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/dialog_close_bt"
+      style="@style/Dialog.Icon.Close"
+      android:layout_gravity="center"/>
+
+</RelativeLayout>

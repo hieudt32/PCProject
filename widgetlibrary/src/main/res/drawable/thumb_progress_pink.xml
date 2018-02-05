@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <size
+        android:height="@dimen/thumb_progress_size_small"
+        android:width="@dimen/thumb_progress_size_small"/>
+    <solid android:color="@color/common_pink"/>
+    <stroke android:color="#22FF436B"
+            android:width="2dp"/>
+</shape>

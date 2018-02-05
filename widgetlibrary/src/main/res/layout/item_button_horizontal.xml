@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font.app.gem.widget.ui.CFButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_button"
+    android:text="@string/bt_submit"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_marginTop="@dimen/padding_large"
+    style="@style/ButtonBase.Round.Pink"/>

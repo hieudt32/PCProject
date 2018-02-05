@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <customview.CustomHeaderView
+        android:id="@+id/furnishing_header"
+        app:custom_header_left_action_ic_src="@drawable/ic_back"
+        app:custom_header_title="@string/furnishing_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/un_furnishing_tenancy_tv"
+        android:text="@string/property_is_sold_unfurnished"
+        style="@style/TextViewBase.FurnishingOption"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_2dp"/>
+
+    <TextView
+        android:id="@+id/furnishing_tenancy_tv"
+        android:text="@string/property_is_sold_furnished"
+        style="@style/TextViewBase.FurnishingOption"/>
+
+    <TextView
+        android:id="@+id/furnishing_hint_tv"
+        android:text="@string/see_inventory_list_in_property_details"
+        style="@style/TextViewBase.FurnishingHint"/>
+
+</LinearLayout>

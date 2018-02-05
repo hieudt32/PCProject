@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/sign_otp_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_right_text="@string/clear"
+    app:custom_header_title="@string/sign" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <app.positiveculture.com.user.customview.CanvasView
+      android:id="@+id/sign_otp_drawing_canvas_view"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_10dp"
+      android:layout_marginLeft="@dimen/margin_49dp"
+      android:layout_marginRight="@dimen/margin_49dp"
+      android:layerType="software"
+      android:src="@drawable/line_dash" />
+
+    <customview.CustomButton
+      android:id="@+id/sign_otp_bt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_4dp"
+      android:layout_marginLeft="@dimen/margin_100dp"
+      android:layout_marginRight="@dimen/margin_100dp"
+      android:layout_marginTop="@dimen/margin_6dp"
+      app:custom_button_text="@string/verify_signing" />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+      android:id="@+id/documents_view_hd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_header_left_action_ic_src="@drawable/ic_back"
+      app:custom_header_title="@string/documents"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="@dimen/margin_12dp"
+      android:layout_marginEnd="@dimen/margin_8dp"
+      android:layout_marginStart="@dimen/margin_8dp"
+      android:layout_marginTop="@dimen/margin_12dp"
+      android:background="@color/white"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_19dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingTop="@dimen/margin_19dp">
+
+        <TextView
+          android:id="@+id/name_document_view"
+          style="@style/TextViewBase.TitleText"
+          android:text="@string/the_beaumont"
+          android:textStyle="bold"/>
+
+        <TextView
+          android:id="@+id/location_documents_view"
+          style="@style/TextViewBase.ItemView"
+          android:text="@string/_145_deveonshire_road"/>
+
+      </LinearLayout>
+
+      <View
+        style="@style/DivideLine.Grayish"/>
+
+      <TextView
+        android:id="@+id/content_documents_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_13dp"
+        android:layout_weight="1"
+        android:text="@string/fk_documents"
+        android:textColor="@color/documents"
+        android:textSize="@dimen/ts_16sp"/>
+    </LinearLayout>
+  </LinearLayout>
+
+</FrameLayout>

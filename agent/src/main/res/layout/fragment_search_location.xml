@@ -1,0 +1,42 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/search_location_hd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/search"/>
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8dp">
+
+    <EditText
+      android:id="@+id/search_location_et"
+      style="@style/SearchDarkGray"
+      android:inputType="text"
+      android:imeOptions="actionSearch"/>
+
+    <ImageView
+      android:id="@+id/delete_all_iv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right|center"
+      android:layout_marginRight="@dimen/margin_16dp"
+      android:src="@drawable/ic_cancel"/>
+  </FrameLayout>
+
+  <View style="@style/DivideLine.LightGray"/>
+
+  <com.malinskiy.superrecyclerview.SuperRecyclerView
+    android:id="@+id/search_rv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

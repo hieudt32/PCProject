@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/client_details_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_left_action_ic_src="@drawable/ic_back" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_24dp"
+        android:paddingTop="@dimen/padding_24dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+          android:id="@+id/client_details_avatar_sdv"
+          android:layout_width="@dimen/size_80dp"
+          android:layout_height="@dimen/size_80dp"
+          android:layout_gravity="center_horizontal"
+          app:placeholderImage="@drawable/ic_avatar"
+          app:roundAsCircle="true" />
+
+        <TextView
+          android:id="@+id/client_details_name_tv"
+          style="@style/TextViewBase.NameItemView"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/margin_6dp"
+          android:text="@string/henry_smith" />
+
+      </LinearLayout>
+
+      <app.positiveculture.com.agent.customview.ItemSummaryCustom
+        android:id="@+id/client_details_phone_isc"
+        style="@style/ClientDetailsItemSummary"
+        app:content_item_summary="4586 6584"
+        app:icon_next_summary="@drawable/ic_call"
+        app:second_icon="@drawable/ic_chat"
+        app:title_item_summary="@string/phone" />
+
+      <View style="@style/DivideLine.LightGray" />
+
+      <app.positiveculture.com.agent.customview.ItemSummaryCustom
+        android:id="@+id/client_details_email_isc"
+        style="@style/ClientDetailsItemSummary"
+        app:content_item_summary="henry@appleinc.com"
+        app:icon_next_summary="@drawable/ic_mail"
+        app:title_item_summary="@string/email" />
+
+      <View style="@style/DivideLine.LightGray" />
+
+      <app.positiveculture.com.agent.customview.ItemSummaryCustom
+        android:id="@+id/client_details_address_isc"
+        style="@style/ClientDetailsItemSummary"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        app:content_item_summary="25 Bukit Batok Crescent, #09-12"
+        app:title_item_summary="@string/address" />
+
+      <app.positiveculture.com.agent.customview.ItemSummaryCustom
+        android:id="@+id/client_details_nric_isc"
+        style="@style/ClientDetailsItemSummary"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        app:content_item_summary="G456245M"
+        app:icon_status="@drawable/yellow_circle_bg"
+        app:title_item_summary="@string/nric_fin" />
+
+      <LinearLayout
+        android:id="@+id/client_detail_note_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/TextViewBase.Description"
+          android:paddingBottom="@dimen/padding_6dp"
+          android:paddingEnd="@dimen/padding_24dp"
+          android:paddingStart="@dimen/padding_24dp"
+          android:paddingTop="@dimen/padding_16dp"
+          android:text="@string/note" />
+
+        <EditText
+          android:id="@+id/client_details_note_et"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:hint="@string/note"
+          android:paddingBottom="@dimen/padding_24dp"
+          android:paddingEnd="@dimen/padding_24dp"
+          android:paddingStart="@dimen/padding_24dp"
+          android:paddingTop="@dimen/padding_8dp"
+          android:textColor="@color/tc_black87"
+          android:textSize="@dimen/ts_16sp" />
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

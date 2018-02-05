@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_grey">
+
+    <customview.CustomHeaderView
+        android:id="@+id/otp_contract_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:custom_header_title="@string/otp_contract_title"
+        app:custom_header_left_text="@string/delete"
+        app:custom_header_right_text="@string/edit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_marginTop="@dimen/margin_12dp">
+
+        <TextView
+            android:id="@+id/otp_contract_property_name_tv"
+            android:text="@string/the_beaumont"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            style="@style/TextViewBase.TitleText"/>
+
+        <TextView
+            android:id="@+id/otp_contract_property_address_tv"
+            android:text="@string/_145_deveonshire_road"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_19dp"
+            style="@style/TextViewBase.ItemView"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/otp_contract_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginTop="@dimen/margin_1dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <customview.CustomButton
+        android:id="@+id/otp_contract_send_btn"
+        app:custom_button_text="@string/send_out_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

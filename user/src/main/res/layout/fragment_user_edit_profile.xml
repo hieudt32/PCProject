@@ -1,0 +1,551 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/user_edit_profile_ll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/edit_profile_custom_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_text="@string/cancel"
+    app:custom_header_right_text="@string/save"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin_20dp"
+        android:paddingTop="@dimen/margin_20dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+          android:id="@+id/edit_profile_avatar_sdv"
+          android:layout_width="@dimen/size_80dp"
+          android:layout_height="@dimen/size_80dp"
+          android:layout_centerInParent="true"
+          app:actualImageScaleType="centerCrop"
+          app:placeholderImage="@drawable/ic_avatar"
+          app:placeholderImageScaleType="centerCrop"
+          app:roundAsCircle="true"/>
+
+        <View
+          android:layout_width="@dimen/size_80dp"
+          android:layout_height="@dimen/size_80dp"
+          android:layout_centerInParent="true"
+          android:background="@drawable/black_transparent_circle_shape"/>
+
+        <View
+          android:layout_width="@dimen/size_36dp"
+          android:layout_height="@dimen/size_36dp"
+          android:layout_centerInParent="true"
+          android:background="@drawable/ic_add"/>
+
+      </RelativeLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_16dp">
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/full_name"/>
+
+          <EditText
+            android:id="@+id/fullname_edt"
+            style="@style/EditTextProfile"
+            android:hint="@string/full_name"
+            android:nextFocusDown="@+id/phone_edt"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/phone"/>
+
+          <LinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <Spinner
+                android:id="@+id/new_user_mobile_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="@dimen/padding_16dp"/>
+
+              <ImageView
+                android:layout_width="@dimen/size_12dp"
+                android:layout_height="@dimen/size_12dp"
+                android:layout_alignRight="@+id/new_user_mobile_spinner"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_down_arrow"/>
+            </RelativeLayout>
+
+            <EditText
+              android:id="@+id/phone_edt"
+              style="@style/EditTextProfile"
+              android:layout_marginLeft="@dimen/size_8dp"
+              android:hint="@string/phone"
+              android:inputType="number"
+              android:nextFocusDown="@+id/email_edt"/>
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/date_of_birth"/>
+
+          <TextView
+            android:id="@+id/date_of_birth_picker"
+            style="@style/EditTextProfile"
+            android:text="1996-07-02"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:text="@string/email"/>
+
+          <EditText
+            android:id="@+id/email_edt"
+            style="@style/EditTextProfile"
+            android:hint="@string/email"
+            android:nextFocusDown="@+id/user_floor_edt"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+      </LinearLayout>
+
+
+      <RelativeLayout
+        style="@style/ItemEditProfile"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:padding="@dimen/size_0dp">
+
+        <Spinner
+          android:id="@+id/residecy_stt_sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:background="@color/white"
+          android:paddingLeft="@dimen/padding_16dp"/>
+
+        <ImageView
+          android:layout_width="@dimen/size_12dp"
+          android:layout_height="@dimen/size_12dp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/margin_16dp"
+          android:src="@drawable/ic_down_arrow"/>
+      </RelativeLayout>
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_16dp">
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_weight="1"
+            android:text="@string/address"/>
+
+          <TextView
+            android:id="@+id/find_addr_bt"
+            style="@style/TextViewBase.TitleText"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:text="@string/find_add"
+            android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <EditText
+            android:id="@+id/user_floor_edt"
+            style="@style/EditTextProfile.Address"
+            android:gravity="end"
+            android:hint="@string/floor"
+            android:imeOptions="actionNext"
+            android:minWidth="@dimen/size_32dp"
+            android:nextFocusDown="@+id/user_unit_edt"/>
+
+          <View
+            android:layout_width="@dimen/size_5dp"
+            android:layout_height="@dimen/margin_1.4dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5dp"
+            android:background="@color/tc_black38"/>
+
+          <EditText
+            android:id="@+id/user_unit_edt"
+            style="@style/EditTextProfile.Address"
+            android:gravity="start"
+            android:hint="@string/unit"
+            android:minWidth="@dimen/size_32dp"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/building_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/building"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/street_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/street"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/street2_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/street"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/postal_code_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/postal_code"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/country_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/country"/>
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:id="@+id/user_edit_bank_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_16dp">
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/bank"/>
+
+          <LinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+              android:id="@+id/user_edit_bank_tv"
+              style="@style/TextViewBase.TitleText"
+              android:layout_width="@dimen/size_0dp"
+              android:layout_weight="1"
+              android:ellipsize="end"/>
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingRight="@dimen/padding_16dp"
+              android:src="@drawable/ic_next"/>
+          </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/nric_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_16dp">
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:id="@+id/user_edit_id_type_tv"
+            android:text="@string/nric_fin_reg"/>
+
+          <LinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+              android:id="@+id/nric_tv"
+              style="@style/TextViewBase.TitleText"
+              android:layout_width="@dimen/size_0dp"
+              android:layout_weight="1"
+              android:ellipsize="end"/>
+
+            <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingRight="@dimen/padding_16dp"
+              android:src="@drawable/ic_next"/>
+          </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_16dp">
+
+        <TextView
+          style="@style/TextViewBase.TitleText"
+          android:layout_width="match_parent"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:text="@string/corporate_company"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/name"/>
+
+          <EditText
+            android:id="@+id/name_et"
+            style="@style/EditTextProfile"
+            android:hint="@string/name"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/phone"/>
+
+          <LinearLayout
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <Spinner
+                android:id="@+id/new_comp_mobile_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="@dimen/padding_16dp"/>
+
+              <ImageView
+                android:layout_width="@dimen/size_12dp"
+                android:layout_height="@dimen/size_12dp"
+                android:layout_alignRight="@id/new_comp_mobile_spinner"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_down_arrow"/>
+            </RelativeLayout>
+
+            <EditText
+              android:id="@+id/com_phone_edt"
+              style="@style/EditTextProfile"
+              android:layout_marginLeft="@dimen/size_8dp"
+              android:hint="@string/phone"/>
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/email"/>
+
+          <EditText
+            android:id="@+id/com_email_et"
+            style="@style/EditTextProfile"
+            android:hint="@string/email"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_16dp">
+
+        <LinearLayout style="@style/ItemEditProfile">
+
+          <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_weight="1"
+            android:text="@string/com_address"/>
+
+          <TextView
+            android:id="@+id/find_com_addr_bt"
+            style="@style/TextViewBase.TitleText"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:text="@string/find_add"
+            android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View
+          style="@style/DivideLine.LightGray"
+          android:layout_marginLeft="@dimen/margin_16dp"/>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/com_floor_edt"
+            style="@style/EditTextProfile.Address"
+            android:gravity="end"
+            android:hint="@string/floor"
+            android:minWidth="@dimen/size_32dp"/>
+
+          <View
+            android:layout_width="@dimen/size_5dp"
+            android:layout_height="@dimen/margin_1.4dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5dp"
+            android:background="@color/tc_black38"/>
+
+          <EditText
+            android:id="@+id/com_unit_edt"
+            style="@style/EditTextProfile.Address"
+            android:gravity="start"
+            android:hint="@string/unit"
+            android:minWidth="@dimen/size_32dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/com_building_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/building"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/com_street_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/street"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/com_street2_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/street"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/com_postal_code_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/postal_code"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <EditText
+          android:id="@+id/com_country_edt"
+          style="@style/EditTextProfile.Address"
+          android:hint="@string/country"
+          android:imeOptions="actionDone"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

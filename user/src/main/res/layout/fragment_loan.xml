@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <customview.CustomHeaderView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:custom_header_left_action_ic_src="@drawable/ic_back"
+        app:custom_header_title="@string/loan_form" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_grey"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_24dp">
+
+        <TextView
+            android:id="@+id/new_loan_bt"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="@string/new_loan"
+            android:textSize="@dimen/ts_20sp"
+            android:textColor="@color/tc_black87"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="@dimen/size_0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/refinance_bt"
+            android:layout_marginTop="@dimen/margin_13dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:text="@string/refinance"
+            android:textSize="@dimen/ts_20sp"
+            android:textColor="@color/tc_black87"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="@dimen/size_0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

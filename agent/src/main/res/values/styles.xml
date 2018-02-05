@@ -1,0 +1,483 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="EditTextBase">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:padding">@dimen/padding_8dp</item>
+  </style>
+
+  <style name="TextViewBase">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textSize">@dimen/ts_common</item>
+    <item name="android:textColor">@color/text_common</item>
+  </style>
+
+  <style name="EditTextBase.Register">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:gravity">left</item>
+  </style>
+
+  <style name="EditTextBase.Verify">
+    <item name="android:layout_margin">@dimen/margin_0.2</item>
+    <item name="android:textSize">@dimen/ts_18sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="EditTextBase.User">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:gravity">left</item>
+    <item name="android:paddingTop">@dimen/padding_10dp</item>
+    <item name="android:paddingBottom">@dimen/padding_10dp</item>
+    <item name="android:paddingLeft">@dimen/padding_16dp</item>
+    <item name="android:paddingRight">@dimen/padding_16dp</item>
+    <item name="android:paddingStart">@dimen/padding_16dp</item>
+    <item name="android:paddingEnd">@dimen/padding_16dp</item>
+    <item name="android:maxLines">1</item>
+  </style>
+
+  <style name="TextViewBase.HeaderTitle">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_20sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.TitleText">
+    <item name="android:textColor">@color/tc_black87</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+  <style name="TextViewBase.TitleDialog">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_17sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="ButtonBase">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+  </style>
+
+  <style name="TextViewBase.MessengerDialog">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_13sp</item>
+  </style>
+
+  <style name="ButtonBase.ButtonDialog">
+    <item name="android:textColor">@color/text_btn_dialog</item>
+    <item name="android:textSize">@dimen/ts_17sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.Description">
+    <item name="android:textColor">@color/text_common</item>
+    <item name="android:textSize">@dimen/ts_14sp</item>
+  </style>
+
+  <style name="StyleButtonCreateOTP">
+    <item name="android:background">@color/button_color</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="ButtonBase.ButtonText">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="StepIndicator">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:background">@color/blue</item>
+    <item name="android:layout_marginRight">@dimen/margin_1dp</item>
+  </style>
+
+  <style name="TextViewBase.ProcessTrackerTitle">
+    <item name="android:textColor">@color/tc_black87</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.ProcessTrackerStatus">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/tc_black54</item>
+  </style>
+
+  <style name="ProcessTracker">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="TrackerIndicatorStatus">
+    <item name="android:layout_height">@dimen/size_16dp</item>
+    <item name="android:layout_width">@dimen/size_16dp</item>
+    <item name="android:background">@drawable/grey_circle_bg</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+  </style>
+
+  <style name="TrackerIndicatorLine">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">@dimen/size_1dp</item>
+    <item name="android:background">@color/gray_line_color</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+  </style>
+
+  <style name="DashBorder">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/size_195dp</item>
+  </style>
+
+  <style name="TextViewBase.ProfileContent">
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+  <style name="TextViewBase.ProfileTitle">
+    <item name="android:layout_width">@dimen/size_91dp</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+  <style name="EditText.MobileNumber">
+    <item name="android:lines">1</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:maxLength">1</item>
+    <item name="android:inputType">number</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:imeOptions">actionNext</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_marginEnd">@dimen/margin_2dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:background">@color/white</item>
+  </style>
+
+  <style name="EditTextBase.BankDetails">
+    <item name="android:layout_height">@dimen/size_44dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:background">@color/white</item>
+    <item name="android:paddingStart">@dimen/padding_16dp</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColorHint">@color/tc_black38</item>
+  </style>
+
+  <style name="CustomTabTextAppearance">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="TextViewBase.NameItemView">
+    <item name="android:textSize">@dimen/ts_20sp</item>
+    <item name="android:textColor">@color/tc_black87</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.ItemView">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/tc_black57</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style name="TextViewBase.PrinceItemView">
+    <item name="android:textSize">@dimen/ts_18sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.StatusItemView">
+    <item name="android:textSize">@dimen/ts_12sp</item>
+    <item name="android:textColor">@color/header_color</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style name="ImageViewNext">
+    <item name="android:layout_marginEnd">@dimen/margin_24dp</item>
+    <item name="android:layout_width">@dimen/size_24dp</item>
+    <item name="android:layout_height">@dimen/size_24dp</item>
+    <item name="android:layout_alignParentEnd">true</item>
+    <item name="android:layout_centerVertical">true</item>
+  </style>
+
+  <style name="TextViewBase.ConfirmButton">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/size_48dp</item>
+    <item name="android:background">@color/button_color</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.FurnishingOption">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:background">@drawable/bg_item_property</item>
+    <item name="android:paddingStart">@dimen/padding_24dp</item>
+    <item name="android:paddingEnd">@dimen/padding_24dp</item>
+    <item name="android:paddingTop">@dimen/padding_13dp</item>
+    <item name="android:paddingBottom">@dimen/padding_13dp</item>
+  </style>
+
+  <style name="TextViewBase.FurnishingHint">
+    <item name="android:textSize">@dimen/ts_12sp</item>
+    <item name="android:textColor">@color/tc_black38</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:layout_marginStart">@dimen/margin_24dp</item>
+    <item name="android:layout_marginEnd">@dimen/margin_24dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_16dp</item>
+  </style>
+
+  <style name="PropertyTypeIcon">
+    <item name="android:layout_height">@dimen/size_80dp</item>
+    <item name="android:layout_width">@dimen/size_80dp</item>
+    <item name="android:scaleType">fitCenter</item>
+    <item name="android:adjustViewBounds">true</item>
+    <item name="android:layout_centerHorizontal">true</item>
+    <item name="android:layout_alignParentTop">true</item>
+    <item name="android:layout_marginTop">@dimen/margin_30dp</item>
+  </style>
+
+  <style name="PropertyTypeTextView">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@drawable/text_property_type</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:paddingBottom">@dimen/padding_16dp</item>
+    <item name="android:gravity">bottom</item>
+    <item name="android:background">@drawable/property_type_bg</item>
+
+  </style>
+
+  <style name="SearchDarkGray">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/tc_black87</item>
+    <item name="android:background">@drawable/bg_edittext_dark_gray</item>
+    <item name="android:paddingLeft">@dimen/padding_24dp</item>
+    <item name="android:paddingTop">@dimen/padding_13dp</item>
+    <item name="android:paddingBottom">@dimen/padding_13dp</item>
+  </style>
+
+  <style name="EditTextBase.CreateProperty">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/size_44dp</item>
+    <item name="android:background">@color/bg_grey</item>
+    <item name="android:layout_margin">@dimen/margin_8dp</item>
+    <item name="android:paddingStart">@dimen/padding_24dp</item>
+    <item name="android:paddingEnd">@dimen/margin_24dp</item>
+    <item name="android:inputType">text</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColorHint">@color/tc_black38</item>
+  </style>
+
+  <style name="EditTextBase.LocationAddress">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/size_44dp</item>
+    <item name="android:background">@color/white</item>
+    <item name="android:inputType">text</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColorHint">@color/tc_black38</item>
+    <item name="android:textColor">@color/tc_black38</item>
+  </style>
+
+  <style name="AddressEditText">
+    <item name="android:maxLines">1</item>
+    <item name="android:inputType">text</item>
+    <item name="android:textColorHint">@color/tc_black38</item>
+    <item name="android:textColor">@color/tc_black87</item>
+    <item name="android:layout_width">@dimen/size_0dp</item>
+    <item name="android:layout_weight">3</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+  <style name="CustomPropertyDetails">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/margin_22dp</item>
+  </style>
+
+  <style name="SignOTPTitle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/tc_black54</item>
+    <item name="android:layout_marginStart">@dimen/margin_24dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_17dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_7dp</item>
+  </style>
+
+  <style name="SignOTPItem">
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_width">@dimen/size_0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="TextViewBase.SignOTPSideTextView">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/tc_black87</item>
+  </style>
+
+  <style name="TextViewBase.CongratulationTitle">
+    <item name="android:textSize">@dimen/ts_24sp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_centerHorizontal">true</item>
+  </style>
+
+  <style name="ClientDetailsItemSummary">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="TextViewBase.ExistingUserTextView">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/tc_black87</item>
+  </style>
+
+  <style name="TextViewBase.TitleText.InformationForm">
+    <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+    <item name="android:layout_marginEnd">@dimen/margin_24dp</item>
+    <item name="android:layout_gravity">center_vertical</item>
+  </style>
+
+  <style name="InformationFormEditText">
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_width">@dimen/size_0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/tc_black38</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_12dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_12dp</item>
+  </style>
+
+  <style name="TextViewBase.ClientProfileName">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/tc_black87</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+  </style>
+
+  <style name="TextViewBase.ClientProfileProperty">
+    <item name="android:textSize">@dimen/ts_14sp</item>
+    <item name="android:textColor">@color/tc_black54</item>
+    <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_2dp</item>
+  </style>
+
+  <style name="CustomProfileForm">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="TextViewBase.TitleText.Settings">
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_marginStart">@dimen/margin_16dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_10dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_10dp</item>
+  </style>
+
+  <style name="ChangePasswordEditText">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">3</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:layout_marginStart">@dimen/margin_5dp</item>
+    <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+    <item name="android:inputType">textPassword</item>
+    <item name="android:background">@android:color/transparent</item>
+  </style>
+
+  <style name="CustomCreateOtp">
+    <item name="android:weightSum">2</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/size_80dp</item>
+    <item name="android:orientation">horizontal</item>
+  </style>
+
+  <style name="TextSolicitor">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:layout_marginStart">@dimen/margin_6dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center_vertical</item>
+  </style>
+
+  <style name="TextSolicitor.">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+    <item name="android:layout_marginStart">@dimen/margin_6dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="StatusCreateOtpDateTime">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textSize">@dimen/ts_14sp</item>
+    <item name="android:paddingBottom">@dimen/padding_8dp</item>
+    <item name="android:gravity">bottom</item>
+    <item name="android:textColor">@color/hint_text_color</item>
+    <item name="android:layout_marginRight">@dimen/margin_24dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_8dp</item>
+  </style>
+
+  <style name="RadioTypeSearchProperty">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/size_36dp</item>
+    <item name="android:background">@drawable/bg_item_property</item>
+    <item name="android:button">@null</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:layout_marginTop">@dimen/margin_2dp</item>
+    <item name="android:paddingEnd">@dimen/padding_24dp</item>
+    <item name="android:paddingStart">@dimen/padding_24dp</item>
+  </style>
+
+  <style name="LoanRadioButton">
+    <item name="android:textColor">@drawable/text_color_radio</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:button">@null</item>
+    <item name="android:layout_width">@dimen/size_64dp</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+</resources>

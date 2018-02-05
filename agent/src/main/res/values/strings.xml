@@ -1,0 +1,347 @@
+<resources>
+  <string name="tab_properties">Properties</string>
+  <string name="tab_clients">Clients</string>
+  <string name="tab_profile">Profile</string>
+  <string name="front">Front</string>
+  <string name="back">Back</string>
+  <string name="number">Number</string>
+  <string name="cea_no">CEA No.</string>
+  <string name="verify_acc">Verify Account</string>
+  <string name="verify_des">Your account is restricted from using this feature until your email address and NRIC has
+    been verified.
+  </string>
+  <string name="verify_des_email">Your account is restricted from using this feature until your email address has
+    been verified.
+  </string>
+  <string name="verify_des_nric">Your account is restricted from using this feature until your NRIC has
+    been verified.
+  </string>
+  <string name="upload_nric">NRIC: Upload your NRIC in your profile.</string>
+  <string name="verify_email">Email: Check your inbox to approve your email address.</string>
+  <string name="nric_fin">NRIC/FIN</string>
+  <string name="nric_des">You will be unable to create properties or receive OTPs until your NRIC
+    has been verified. This can be updated later in your profile.
+  </string>
+  <string name="id_des">You will be unable to create properties or receive OTPs until your ID
+    has been verified. This can be updated later in your profile.
+  </string>
+  <string name="nric">NRIC</string>
+  <string name="name">Name</string>
+  <string name="enter">Enter</string>
+  <string name="confirm_profile">Please confirm that this is your profile and we will send a OTP to
+    the phone number registered to this account.
+  </string>
+  <string name="not_you">Not you?</string>
+  <string name="verify_mobile_des">An SMS containing a 6-digit One-Time Pin has been sent to your
+    mobile. Please key in below.
+  </string>
+  <string name="resend_one_time_pin">Resend One-Time Pin</string>
+  <string name="create_password">Create Password</string>
+  <string name="create_password_des">In order for your account to be generated you must create your
+    own password.
+  </string>
+  <string name="email">Email</string>
+  <string name="email_hint">user@example.com</string>
+  <string name="password">Password</string>
+  <string name="phone_hint">Min. 8 characters</string>
+  <string name="create">Create</string>
+  <string name="create_password_des2">Min. 8 chars, at least 1 alphabet and 1 number.</string>
+  <string name="verify_email_header">Verify Email</string>
+  <string name="verify_email_des_1">We’ve sent an email to</string>
+  <string name="verify_email_des_2">to verify your email address. You will be unable to create
+    properties or receive OTPs until your email has been verified.
+  </string>
+  <string name="bank_details">Bank Details</string>
+  <string name="bank_details_des">Bank account details are required for disbursement of commissions
+    for your clients\' conveyancing process.
+  </string>
+  <string name="bank">Bank</string>
+  <string name="account_number">Account Number</string>
+  <string name="type_of_account">Type of account</string>
+  <string name="length_1000">999</string>
+  <string name="tab_property">Property</string>
+  <string name="tab_seller">Seller</string>
+  <string name="tab_Buyer">Buyer</string>
+  <string name="tab_completed">Completed</string>
+  <string name="select_owners">Select Owners</string>
+  <string name="location">Location</string>
+  <string name="find_property">Find property</string>
+  <string name="add_address_manually">Add address manually</string>
+  <string name="search">Search</string>
+  <string name="add">Add:</string>
+  <string name="address">Address</string>
+  <string name="refresh_map">Refresh map</string>
+  <string name="next">Next</string>
+  <string name="adjust_pin">Adjust Pin</string>
+  <string name="photo">Photos</string>
+  <string name="add_photo">Add photo</string>
+  <string name="not_you_des">Not you? Please double check your CEA Number, Verification code will be
+    sent via mobile number registered with CEA
+  </string>
+  <string name="verify_mobile_number">Verify Mobile Number</string>
+  <string name="confirm_profile_title">Confirm Profile</string>
+  <string name="expired_otp">Expired OTP</string>
+  <string name="expired_otp_des">Your One-Time Pin has expired. Please click the \"Resend One-Time
+    Pin\" for a new pin to be sent to your registered number.
+  </string>
+  <string name="later">Later</string>
+  <string name="save">Save</string>
+  <string name="property_type">Property Type</string>
+  <string name="property_type_des">What type of \n property are you listing?</string>
+  <string name="property_type_hdb">HDB</string>
+  <string name="property_type_condo">Condo</string>
+  <string name="property_type_landed">Landed</string>
+  <string name="property_detail">Property Detail</string>
+  <string name="rooms">Rooms</string>
+  <string name="plus_rooms">Plus Rooms</string>
+  <string name="bathrooms">Bathrooms</string>
+  <string name="delete">Delete</string>
+  <string name="preview">Preview</string>
+  <string name="summary">Summary</string>
+  <string name="fk_location">145 Devonshire Road</string>
+  <string name="fk_property_detail">2+1 Bedrooms • 2 Bathrooms • 1950 sqft</string>
+  <string name="fk_price">1,200,000</string>
+  <string name="price">Price</string>
+  <string name="fk_price2">1,000,000</string>
+  <string name="valuation">Valuation</string>
+  <string name="fk_description">Huge and spacious 3-Bedroom apartment</string>
+  <string name="description">Description</string>
+  <string name="summary_des">Official documents for this property can be added via the website.
+  </string>
+  <string name="create_listing">Create Listing</string>
+  <string name="error">Error</string>
+  <string name="error_messenger">Please fill all field</string>
+  <string name="error_messenger2">Password not match</string>
+  <string name="error_messenger3">not equal value 0</string>
+  <string name="agency">Agency</string>
+  <string name="licence">Licence</string>
+  <string name="floor_unit">Floor/Unit</string>
+  <string name="building">Building</string>
+  <string name="street">Street</string>
+  <string name="country">Country</string>
+  <string name="postal_code">Postal Code</string>
+  <string name="create_otp">Create OTP</string>
+  <string name="read_more">Read More</string>
+  <string name="_3_month_ago">3 Months Ago</string>
+  <string name="document">Document</string>
+  <string name="floor">Floor</string>
+  <string name="unit">Unit</string>
+  <string name="sqft">sqft</string>
+  <string name="sqm">sqm</string>
+  <string name="ss">S$</string>
+  <string name="optional">Optional</string>
+  <string name="studio">Studio</string>
+  <string name="floor_size_build">Floor Size (Built Up)</string>
+  <string name="floor_size_lander">Floor Size (Landed)</string>
+  <string name="otp_contract_title">OTP Contract</string>
+  <string name="edit">Edit</string>
+  <string name="done">Done</string>
+  <string name="send_out_otp">Send out OTP</string>
+  <string name="send_out_otp_msg">Owner will receive the OTP for signing.</string>
+  <string name="send_out_otp_cancel">Cancel</string>
+  <string name="send_out_otp_ok">OK</string>
+  <string name="furnishing_title">Furnishing</string>
+  <string name="property_is_sold_unfurnished">Property is sold unfurnished</string>
+  <string name="property_is_sold_furnished">Property is sold furnished</string>
+  <string name="see_inventory_list_in_property_details">*See inventory list in property details</string>
+  <string name="see_tenancy_agreement_in_property_details">*See tenancy agreement in property details</string>
+  <string name="process_tracker">Process Tracker</string>
+  <string name="selling">Selling</string>
+  <string name="title">Title</string>
+  <string name="sign_otp">Sign OTP</string>
+  <string name="otp_expires">OTP Expires</string>
+  <string name="delete_listing">Delete Listing</string>
+  <string name="delete_listing_mes">Are you sure you want to delete this listing?</string>
+  <string name="delete_property_mes">Are you sure you want to delete this property?</string>
+  <string name="bedroom">Bedrooms</string>
+  <string name="dollar">$</string>
+  <string name="dot">•</string>
+  <string name="otp">OTP</string>
+  <string name="signatures">Signatures</string>
+  <string name="contract_details">Contract Details</string>
+  <string name="otp_expiry_date">OTP Expiry Date</string>
+  <string name="completion_date">OTP Completion Date</string>
+  <string name="total_price">Total Price</string>
+  <string name="option_fee">Option Fee</string>
+  <string name="exercise_fee">Exercise Fee</string>
+  <string name="view_otp_contract">View OTP Contract</string>
+  <string name="parties">Parties</string>
+  <string name="verify_offline_signing">Verify Offline Signing</string>
+  <string name="verify_signing">Verify Signing</string>
+  <string name="owner_side">Owner Side</string>
+  <string name="buyer_side">Buyer Side</string>
+  <string name="henry_smith">Henry Smith</string>
+  <string name="view_parties">View Parties</string>
+  <string name="verify">Verify</string>
+  <string name="verify_signing_desc">I confirm that the owner of said property has signed the OTP contract</string>
+  <string name="complete_offline_desc">I confirm that the buyer of said property has signed the OTP contract</string>
+  <string name="check_before_verifying">Check before verifying</string>
+  <string name="dialog_verify_signing_desc">Once confirmed the OTP will\nbe issued and passed on to\nthe buyer.</string>
+  <string name="more">+1</string>
+  <string name="documents">Documents</string>
+  <string name="conveyancing">Conveyancing</string>
+  <string name="loan_details">Loan Details</string>
+  <string name="chief_planner_ura">Chief Planner, URA</string>
+  <string name="pending_onwers_actions">Pending Onwers Actions</string>
+  <string name="congratulation">Congratulation</string>
+  <string name="completed">Completed</string>
+  <string name="message">Message?</string>
+  <string name="congrat_msg">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+    viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices.</string>
+  <string name="hdb_searial_number">HDB Serial Number</string>
+  <string name="hdb_otp_timestamp">HDB OTP Timestamp</string>
+  <string name="hdb_appointment">HDB Appointment (Days)</string>
+  <string name="otp_start_date">OTP Start Date</string>
+  <string name="weeks_to_expiry">Weeks to Expiry</string>
+  <string name="weeks_to_completion">Weeks to Completion</string>
+  <string name="assign_buyer_agent">Assign Buyer Agent</string>
+  <string name="Commission_payable_to_seller_agent">Commission payable to seller agent</string>
+  <string name="exact_amount">Exact Amount</string>
+  <string name="percent_user">Percent</string>
+  <string name="and_or_nominee">And/Or nominee</string>
+  <string name="generate">Generate</string>
+  <string name="positive_culture_pl_tv">Positive Culture PL</string>
+  <string name="solicitor">Solicitor</string>
+  <string name="furnishing">Furnishing</string>
+  <string name="tenancy">Tenancy</string>
+  <string name="select_agent">Select Agent</string>
+  <string name="mon_3_april_2017">Mon 3 April 2017</string>
+  <string name="date_hdb_otp_timestamp">30 May 2017 1:21 PM</string>
+  <string name="hdb_serial">00000000</string>
+  <string name="hdb_appointment_day">14</string>
+  <string name="date_otp_start">Mon 20 March 2017</string>
+  <string name="two">2</string>
+  <string name="eight">8</string>
+  <string name="ss0">S$0</string>
+
+  <string name="invalid_cea_title">Invalid CEA No</string>
+  <string name="invalid_cea_desc">You have entered an incorrect CEA No, please try again.</string>
+  <string name="clients">Clients</string>
+  <string name="client">Client</string>
+  <string name="jennifer_wu">Jennifer Wu</string>
+  <string name="g546556m_pending_approval">G546556M - Pending Approval</string>
+  <string name="phone">Phone</string>
+  <string name="note">Note</string>
+  <string name="existing_user_desc">This NRIC number is already linked to an existing user.If you
+    would like to represent this user, we will send an email on your behalf requesting for their approval.</string>
+  <string name="send_request">Send Request</string>
+  <string name="request_sent_title">Existing User</string>
+  <string name="request_sent_desc">Awaiting approval from user.</string>
+  <string name="existing_user">Existing User</string>
+  <string name="g456875m">G456875M</string>
+  <string name="client_list_empty_desc">Currently you do not have any clients in your database,
+    to create a new client click the + above</string>
+  <string name="create_new_client">Create New Client</string>
+  <string name="new_user">New User</string>
+  <string name="send_invitation">Send Invitation</string>
+  <string name="invitation_sent_title">Invitation Sent</string>
+  <string name="invitation_sent_desc">User will receive an email to complete registration</string>
+  <string name="profile">Profile</string>
+  <string name="cea">CEA</string>
+  <string name="positive">Positive</string>
+  <string name="culture">Culture</string>
+  <string name="edit_profile">Edit Profile</string>
+  <string name="full_name">Full Name</string>
+  <string name="bank_details_desc">Bank account details are required for disbursement of referral fees.</string>
+  <string name="accout_no">Account No</string>
+  <string name="account_type">Account Type</string>
+  <string name="add_client">Create New Client</string>
+  <string name="fk_documents">I confirm that the owner of said property has signed the OTP contract
+    I confirm that the owner of said property has signed the OTP contract I confirm that the owner
+    of said property has signed the OTP contract I confirm that the owner of said property has signed
+    the OTP contract I confirm that the owner of said property has signed the OTP contract I confirm
+    that the owner of said property has signed the OTP contract I confirm that the owner of said property
+    has signed the OTP contract I confirm that the owner of said property has signed the OTP contract
+    I confirm that the owner of said property has signed the OTP contract</string>
+  <string name="settings">Settings</string>
+  <string name="change_password">Change Password</string>
+  <string name="switch_title">Switch title</string>
+  <string name="logout">Logout</string>
+  <string name="change_password_description">Min. 8 chars, at least 1 alphabet and 1 number.</string>
+  <string name="reject">Reject</string>
+  <string name="extent">Extent</string>
+  <string name="agent_agent">Agent:</string>
+  <string name="pending_approval">- Pending Approval</string>
+  <string name="properties">Properties</string>
+  <string name="co_reg_no">CO.REG.NO</string>
+  <string name="payment">Payment</string>
+  <string name="payment_des_title">Payment must be made before conveyancing can start.</string>
+  <string name="payment_des">In order to make payment you need to go to…….</string>
+  <string name="mobile">Mobile</string>
+  <string name="add_owners">Add Owner</string>
+  <string name="email_invalidate">Email invalidate</string>
+  <string name="email_empty">Email field can not be empty</string>
+  <string name="nric_empty">The nric field is required.</string>
+  <string name="nric_front_empty">The nric front image field is required.</string>
+  <string name="nric_back_empty">The nric back image field is required.</string>\
+  <string name="resend_one_time_pin_messenger">A new One-Time Pin has been sent to your mobile via SMS.</string>
+  <string name="resend_request_title">Resend One-Time Pin</string>
+  <string name="resend_request_msg">You have entered the wrong OTP twice, please tap "resend" to
+    receive your new OTP and try again. </string>
+  <string name="listing_created">Your listing has been created</string>
+  <string name="year">Year</string>
+  <string name="month">Month</string>
+  <string name="day">Day</string>
+  <string name="minute">Minute</string>
+  <string name="hour">Hour</string>
+  <string name="ago">Ago</string>
+  <string name="second">Second</string>
+  <string name="empty_property_seller">Currently you do not have properties in this section, to
+    create a new property, click the + above</string>
+  <string name="buyer_empty">Currently you do not have any OTPs assigned to you.</string>
+  <string name="client_buyer_empty">Currently this client does not have any OTPs assigned to him/her.</string>
+  <string name="seller_empty">Currently you do not have any OTPs.</string>
+  <string name="client_seller_empty">Currently this client does not have any OTPs.</string>
+  <string name="complete_empty">Currently you do not have any completed property transfers.</string>
+  <string name="client_complete_empty">Currently this client does not have any completed property transfers.</string>
+  <string name="empty_properties">Currently you do not have properties in your database, to create a
+    new property, click the + above.</string>
+  <string name="search_name_or_cea">Search Name or CEA</string>
+  <string name="_caption">- Caption</string>
+  <string name="property_vacant_possession">Property is sold with vacant possession</string>
+  <string name="property_subject_existing">Property is sold subject to existing tenancy</string>
+  <string name="furnished">Furnished</string>
+  <string name="unfurnished">Unfurnished</string>
+  <string name="existing_tenancy">Existing Tenancy</string>
+  <string name="vacant_possession">Vacant Possession</string>
+  <string name="hdb_serial_number_error">HDB serial number should be at least 10 digits</string>
+  <string name="pending_buyers_signing">Pending Buyers Signing</string>
+  <string name="owner_will_receive_otp">Owner will receive the OTP for signing</string>
+  <string name="property">Property</string>
+  <string name="new_user_description">There is no users in our database with this ID number, if you
+    wish to invite a new user then enter their email address below and we will send them an invitation.</string>
+  <string name="create_property_description_hint">Provide a description for the property to include
+    penthouse, loft, split level or number of storeys, etc.</string>
+  <string name="delete_photo_title">Delete photo</string>
+  <string name="delete_photo_msg">Are you sure you want to delete this photo?</string>
+  <string name="id_number">ID Number</string>
+  <string name="agent">Agent</string>
+  <string name="buyer">Buyer</string>
+  <string name="edit_otp">Edit OTP</string>
+  <string name="owner_rejected">Owner Rejected</string>
+  <string name="assign_buyer">Assign Buyer</string>
+  <string name="buying">Buying</string>
+  <string name="assign_client">Assign Client</string>
+  <string name="assign">Assign</string>
+  <string name="complete_offline">Complete Offline</string>
+  <string name="this_will_assign_otp_to_the_selected">This will assign the OTP to the selected
+    buyers and sends a notification to them for signing.</string>
+  <string name="to_complete_signing_offline_the_original">To complete signing offline the original
+    signed hard copy OTP will need to the delivered to out office to process</string>
+  <string name="reassign">Reassign</string>
+  <string name="reassign_mes">Reassigning the OTP will recall the contact from all assigned users
+    and will allow you to assign new users. Are you sure you want to reassign this OTP ?</string>
+  <string name="reassign_client">Reassign Client</string>
+  <string name="check_before_complete_offline">Check before complete offline</string>
+  <string name="otp_signed">OTP signed</string>
+  <string name="pending_agent_update">Pending agent\'s update</string>
+  <string name="sign_otp_hard_copy">Sign OTP (Hard copy)</string>
+  <string name="pending_buyers_signing_hard_copy">Pending Buyers Signing (hard copy)</string>
+  <string name="have_a_loan">Have a loan?</string>
+  <string name="select_bank">Select Bank</string>
+  <string name="loan_information">Loan Information</string>
+  <string name="owner_must_verify">Owner must verify if the have an existing loan</string>
+  <string name="you_signed_otp">You"'"ve signed the OTP</string>
+  <string name="delete_otp_mes">Are you sure you want to delete this OTP?</string>
+  <string name="delete_property_success">This property deleted</string>
+</resources>

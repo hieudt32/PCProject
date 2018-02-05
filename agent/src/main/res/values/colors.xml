@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="colorPrimary">#019491</color>
+  <color name="colorPrimaryDark">#006564</color>
+  <color name="colorAccent">#c8000000</color>
+  <color name="gray">#8c000000</color>
+
+  <color name="button_color">#F95C00</color>
+  <color name="status_error">#FF2735</color>
+  <color name="hint_text_color">#B0B0B0</color>
+  <color name="text_common_black">#000000</color>
+  <color name="color_text_link">#50E3C9</color>
+  <color name="text_suggest">#424242</color>
+  <color name="text_btn_dialog">#0F82FF</color>
+  <color name="steel">#8e8e93</color>
+  <color name="tc_black38">#60000000</color>
+  <color name="tc_black54">#8a000000</color>
+  <color name="tc_black87">#de000000</color>
+  <color name="white">#ffffffff</color>
+  <color name="header_color">#019491</color>
+  <color name="text_common">#A9A9A9</color>
+  <color name="current_step_color">#006564</color>
+  <color name="future_step_color">#323d43</color>
+  <color name="progress_color">#ffbd02</color>
+  <color name="silver">#e9e9ea</color>
+  <color name="tc_black12">#1f000000</color>
+  <color name="bg_grey">#F5F5F5</color>
+  <color name="bg_photo">#1e000000</color>
+  <color name="bg_close">#32000000</color>
+  <color name="big_circle_color">#179B99</color>
+  <color name="medium_circle_color">#2BA2A0</color>
+  <color name="small_circle_color">#3DA8A6</color>
+  <color name="tc_white70">#B2ffffff</color>
+  <color name="tc_white13">#28ffffff</color>
+  <color name="documents">#DEB6B6B6</color>
+  <color name="bottom_bar_title">#969696</color>
+
+</resources>

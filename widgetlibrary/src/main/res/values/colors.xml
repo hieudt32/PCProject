@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--<color name="colorAccent">#FF4081</color>-->
+  <color name="colorAccent">#000000</color>
+  <color name="colorPrimary">#019491</color>
+  <color name="colorPrimaryAlpha">#88FF436B</color>
+  <color name="colorPrimaryDark">#E23F62</color>
+  <color name="light_gray">#EEEEEE</color>
+  <color name="grey">#DCDCDE</color>
+  <color name="text_common">#A9A9A9</color>
+  <color name="booking_title_color">#ADADAD</color>
+  <color name="booking_content_color">#777777</color>
+  <color name="black">#000000</color>
+  <color name="semi_black">#282828</color>
+  <color name="inactive_tab_color">#999999</color>
+  <color name="white">#FFFFFF</color>
+  <color name="light_black">#88444444</color>
+  <color name="light_black_1">#555555</color>
+  <color name="common_pink">#FF436B</color>
+  <color name="section_header">#6C6C6C</color>
+  <color name="bg_dialog_translucent">#BB000000</color>
+  <color name="bt_grey">#B2B2B2</color>
+  <color name="dark_grey">#A9A9A9</color>
+  <color name="fc_light_gray">#cccccc</color>
+  <color name="bg_seekbar">#D8D8D8</color>
+  <color name="semi_grey">#6c6c6c</color>
+  <color name="bg_status_bar">#33000000</color>
+  <color name="text_disable">#c9c9c9</color>
+  <color name="hint_text_alpha">#B6B6B6</color>
+  <color name="dialog_text_color">#282828</color>
+  <color name="fc_gray">#9E9E9E</color>
+  <color name="button_switch_blue">#4FE1C7</color>
+
+
+  <color name="text_btn_dialog">#007AFF</color>
+  <color name="gray">#1e000500</color>
+  <color name="color_dialog">#F3F3F3</color>
+  <color name="dialog_bg_color">#f6f6f6</color>
+  <color name="light_blue">#007aff</color>
+
+  <color name="button_color_darker">#f95c00</color>
+  <color name="button_color_disabled">#FF8E3D</color>
+  <color name="color_text_link">#50E3C9</color>
+  <color name="color_item_otp">#50E3C9</color>
+
+  <color name="tv_property_title_color">#DE000000</color>
+  <color name="tv_property_info_color">#8A000000</color>
+
+
+  <color name="header_color">#019491</color>
+  <color name="tc_black38">#61000000</color>
+  <color name="tc_black54">#8A000000</color>
+  <color name="tc_black57">#92000000</color>
+  <color name="tc_black87">#DE000000</color>
+  <color name="charcoalGrey">#393D43</color>
+  <color name="greyish">#acacac</color>
+  <color name="gray_line_color">#e0e0e0</color>
+
+  <color name="dialog_action_text_color">#007AFF</color>
+  <color name="dialog_action_divider_color">#0D000000</color>
+
+  <color name="status_warning">#FFBD02</color>
+  <color name="status_success">#50E3C9</color>
+  <color name="status_disabled">#E0E0E0</color>
+
+  <color name="popup_dialog_bg">#E6F6F6F6</color>
+
+  <color name="thumb_scroll">#4a019491</color>
+  <color name="transparent">#00000000</color>
+</resources>

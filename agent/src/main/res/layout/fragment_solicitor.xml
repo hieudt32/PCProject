@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_grey"
+              android:orientation="vertical">
+
+  <!-- TODO: Update blank fragment layout -->
+  <customview.CustomHeaderView
+    android:id="@+id/solicitor_header_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_right_text="@string/done"
+    app:custom_header_title="@string/solicitor"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_10dp"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/margin_8dp">
+
+    <TextView
+      android:id="@+id/solicitor_name_tv"
+      style="@style/TextSolicitor"
+      android:text="@string/name"
+      android:layout_marginTop="@dimen/size_0dp"/>
+
+    <EditText
+      android:id="@+id/solicitor_name_et"
+      style="@style/TextSolicitor"
+      android:layout_marginEnd="@dimen/margin_6dp"
+      android:layout_weight="3.5"
+      android:background="@android:color/transparent"/>
+
+    <ImageView
+      android:visibility="invisible"
+      android:id="@+id/solicitor_clear_name_iv"
+      android:src="@drawable/ic_close_black"
+      android:layout_gravity="center_vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_10dp"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/margin_8dp">
+
+    <TextView
+      android:id="@+id/solicitor_address_tv"
+      style="@style/TextSolicitor"
+      android:text="@string/address"/>
+
+    <EditText
+      android:id="@+id/solicitor_address_et"
+      style="@style/TextSolicitor"
+      android:layout_marginEnd="@dimen/margin_6dp"
+      android:layout_weight="3.5"
+      android:background="@android:color/transparent"/>
+
+    <ImageView
+      android:visibility="invisible"
+      android:id="@+id/solicitor_clear_address_iv"
+      android:src="@drawable/ic_close_black"
+      android:layout_gravity="center_vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+
+  <TextView
+    android:text="@string/solicitor"
+    android:padding="@dimen/padding_16dp"
+    android:textSize="@dimen/ts_14sp"
+    style="@style/TextViewBase.ItemView"/>
+
+  <com.malinskiy.superrecyclerview.SuperRecyclerView
+    android:id="@+id/solicitor_list_srv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog.Layout">
+
+  <LinearLayout
+      android:background="@drawable/bg_dialog_content"
+      android:layout_centerInParent="true"
+      android:orientation="vertical"
+      android:padding="28dp"
+      style="@style/Dialog.Content">
+
+    <font.app.gem.widget.ui.CFTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/confirm_purchase_tv"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:text="@string/choose_service_type"/>
+
+    <font.app.gem.widget.ui.CFButton
+        android:id="@+id/menu_service_bt"
+        style="@style/ButtonBase.Round.Pink.Selector"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:minHeight="0dp"
+        android:text="@string/menu_service"/>
+
+    <font.app.gem.widget.ui.CFButton
+        android:id="@+id/event_service_bt"
+        style="@style/ButtonBase.Round.Pink.Selector"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:minHeight="0dp"
+        android:text="@string/event_service"/>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/cancel_dialog_tv"
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/cancel_choose"/>
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/dialog_close_bt"
+      style="@style/Dialog.Icon.Close"
+      android:visibility="gone"
+      android:layout_gravity="center"/>
+
+</RelativeLayout>

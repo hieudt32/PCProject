@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:orientation="vertical"
+  android:paddingEnd="@dimen/margin_24dp"
+  android:paddingStart="@dimen/margin_24dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    android:orientation="horizontal">
+
+    <View
+      android:id="@+id/otp_item_status_view"
+      android:layout_width="@dimen/size_12dp"
+      android:layout_height="@dimen/size_12dp"
+      android:layout_gravity="center_vertical"
+      android:layout_marginEnd="@dimen/margin_6dp"
+      android:layout_marginStart="@dimen/margin_6dp"
+      android:background="@drawable/grey_circle_bg" />
+
+    <TextView
+      android:id="@+id/otp_item_name_tv"
+      style="@style/OTPItem"
+      android:layout_marginEnd="@dimen/margin_16dp"
+      android:layout_marginStart="@dimen/margin_16dp"
+      android:layout_weight="1"
+      android:text="@string/lucy_wong"
+      android:textColor="@color/tc_black87"
+      android:textSize="@dimen/ts_16sp" />
+
+    <TextView
+      android:id="@+id/otp_item_type_tv"
+      style="@style/OTPItem"
+      android:text="@string/owner"
+      android:textColor="@color/tc_black54"
+      android:textSize="@dimen/ts_14sp" />
+
+  </LinearLayout>
+
+  <View
+    android:id="@+id/otp_item_line_separator"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_1dp"
+    android:visibility="gone"
+    android:background="@color/status_disabled" />
+
+</LinearLayout>

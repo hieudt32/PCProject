@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/layout_splash"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+      android:id="@+id/viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop" />
+
+    <LinearLayout
+      android:id="@+id/terms_conditions_privacy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/terms_conditions_tv"
+        style="@style/TextViewBase.StatusLogin"
+        android:layout_marginEnd="@dimen/margin_3dp"
+        android:text="@string/terms_conditions"
+        android:textAlignment="center" />
+
+      <TextView
+        style="@style/TextViewBase.StatusLogin"
+        android:text="and" />
+
+      <TextView
+        android:id="@+id/privacy_policy_tv"
+        style="@style/TextViewBase.StatusLogin"
+        android:layout_marginStart="@dimen/margin_3dp"
+        android:text="@string/privacy_policy"
+        android:textAlignment="center" />
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/status_login_tv"
+      style="@style/TextViewBase.StatusLogin"
+      android:layout_above="@+id/terms_conditions_privacy"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="@dimen/margin_2dp"
+      android:text="@string/status_login"
+      android:textAlignment="center" />
+
+    <Button
+      android:id="@+id/register_btn"
+      style="@style/ButtonBase.ButtonText"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_44dp"
+      android:layout_above="@+id/status_login_tv"
+      android:layout_marginBottom="@dimen/margin_28dp"
+      android:layout_marginLeft="@dimen/margin_24dp"
+      android:layout_marginRight="@dimen/margin_24dp"
+      android:background="@drawable/custom_button_register"
+      android:text="@string/register_as_new_agent"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/login_btn"
+      style="@style/ButtonBase.ButtonText"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_44dp"
+      android:layout_above="@+id/register_btn"
+      android:layout_marginBottom="@dimen/margin_10dp"
+      android:layout_marginLeft="@dimen/margin_24dp"
+      android:layout_marginRight="@dimen/margin_24dp"
+      android:background="@drawable/custom_button_login"
+      android:text="@string/login"
+      android:textAllCaps="false" />
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/login_btn">
+
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/margin_88dp"
+        android:layout_marginStart="@dimen/margin_88dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_screen" />
+    </RelativeLayout>
+  </RelativeLayout>
+  <RelativeLayout
+    android:id="@+id/splash_screen_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_color"
+    android:visibility="visible">
+
+    <ImageView
+      android:id="@+id/ic_positive_culture"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginEnd="@dimen/margin_88dp"
+      android:layout_marginStart="@dimen/margin_88dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/splash_screen" />
+
+    <ProgressBar
+      android:id="@+id/ic_loading_splash_pg"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ic_positive_culture"
+      android:layout_centerInParent="true"
+      android:layout_marginTop="-28dp"
+      android:visibility="gone" />
+  </RelativeLayout>
+</RelativeLayout>

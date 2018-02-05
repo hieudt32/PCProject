@@ -1,0 +1,120 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/user_nric_ll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/custom_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_title="@string/id"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_16dp">
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white">
+
+      <app.positiveculture.com.agent.customview.UserIdTypeSpinner
+        android:id="@+id/user_nric_type_spinner"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"/>
+
+      <EditText
+        android:id="@+id/nric_number_et"
+        style="@style/InformationFormEditText"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"/>
+
+    </TableRow>
+
+    <View style="@style/DivideLine.LightGray"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/upload_img_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_0dp"
+    android:layout_marginTop="@dimen/margin_12dp"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_8dp">
+
+    <RelativeLayout
+      android:id="@+id/nric_view_front_rl"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_0dp"
+      android:layout_marginBottom="@dimen/margin_16dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_nric">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/front"
+        android:textColor="@color/tc_black38"
+        android:textSize="@dimen/ts_16sp"
+        android:textStyle="bold"/>
+
+      <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/nric_front_view_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageScaleType="fitCenter"
+        app:placeholderImage="@drawable/place_holder"
+        app:placeholderImageScaleType="centerCrop"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+      android:id="@+id/nric_view_back_rl"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_0dp"
+      android:layout_marginBottom="@dimen/margin_16dp"
+      android:layout_weight="1"
+      android:background="@drawable/bg_nric">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/back"
+        android:textColor="@color/tc_black38"
+        android:textSize="@dimen/ts_16sp"
+        android:textStyle="bold"/>
+
+      <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/nric_back_view_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageScaleType="fitCenter"
+        app:placeholderImage="@drawable/place_holder"
+        app:placeholderImageScaleType="centerCrop"/>
+    </RelativeLayout>
+  </LinearLayout>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_24dp"
+    android:paddingLeft="@dimen/padding_16dp"
+    android:paddingRight="@dimen/padding_16dp"
+    android:paddingTop="@dimen/padding_30dp"
+    android:text="@string/id_des"
+    android:textColor="@color/tc_black54"/>
+</LinearLayout>

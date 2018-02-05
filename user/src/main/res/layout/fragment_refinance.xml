@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:custom_header_left_action_ic_src="@drawable/ic_back"
+        app:custom_header_title="@string/refinance" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/property_type" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:text="@string/private_res" />
+
+                    <RadioButton style="@style/RadioButtonLoan" />
+                </LinearLayout>
+
+                <View style="@style/DivideLine.LightGray" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:text="@string/hdb" />
+
+                    <RadioButton style="@style/RadioButtonLoan" />
+                </LinearLayout>
+
+                <View style="@style/DivideLine.LightGray" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/rates" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:text="@string/fixed" />
+
+                    <RadioButton style="@style/RadioButtonLoan" />
+                </LinearLayout>
+
+                <View style="@style/DivideLine.LightGray" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:text="@string/floating" />
+
+                    <RadioButton style="@style/RadioButtonLoan" />
+                </LinearLayout>
+
+                <View style="@style/DivideLine.LightGray" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:text="@string/both" />
+
+                    <RadioButton style="@style/RadioButtonLoan" />
+                </LinearLayout>
+
+                <View style="@style/DivideLine.LightGray" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/existing_loan_amount" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:text="@string/$" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/current_financer" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <Spinner
+                        android:id="@+id/current_financer_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/current_interest" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <EditText
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:background="@android:color/transparent"
+                        android:hint="0%"
+                        android:textColorHint="@color/tc_black54" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/loan_tenure" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <customview.CustomPropertyDetails
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_56dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/name" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <EditText
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/full_name"
+                        android:textColorHint="@color/tc_black54" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/contact_number" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText"
+                        android:text="@string/_65"
+                        android:textColor="@color/colorPrimary" />
+
+                    <EditText
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/tc_black54" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayoutLoan">
+
+                <TextView
+                    style="@style/TextViewBase.HeaderLoan"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/email" />
+
+                <LinearLayout style="@style/ItemLayoutLoan">
+
+                    <EditText
+                        style="@style/TextViewBase.TitleText.Loan"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/email"
+                        android:textColorHint="@color/tc_black54" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutLoan"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_16dp"
+                android:paddingTop="@dimen/padding_16dp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText"
+                        android:text="@string/agree_to_the" />
+
+                    <TextView
+                        style="@style/TextViewBase.TitleText"
+                        android:layout_marginTop="@dimen/margin_4dp"
+                        android:text="@string/term_condition"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+                <RadioButton style="@style/RadioButtonLoan" />
+            </LinearLayout>
+
+            <customview.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48dp"
+                app:custom_button_text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

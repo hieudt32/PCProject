@@ -1,0 +1,141 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:fresco="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/custom_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    fresco:custom_header_left_action_ic_src="@drawable/ic_back"
+    fresco:custom_header_title="@string/confirm_profile_title"/>
+
+  <com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/user_avatar_iv"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margin_25dp"
+    android:src="@drawable/ic_avatar"
+    fresco:placeholderImage="@drawable/ic_avatar"
+    fresco:placeholderImageScaleType="fitCenter"
+    fresco:progressBarImage="@drawable/circular_progress_bar"
+    fresco:roundAsCircle="true"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_36dp"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/padding_16dp"
+    android:paddingStart="@dimen/padding_16dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_44dp"
+      android:orientation="horizontal">
+
+      <TextView
+        style="@style/TextViewBase.ProfileTitle"
+        android:text="@string/name"/>
+
+      <TextView
+        android:id="@+id/agent_name_tv"
+        style="@style/TextViewBase.ProfileContent"
+        android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_44dp"
+      android:orientation="horizontal">
+
+      <TextView
+        style="@style/TextViewBase.ProfileTitle"
+        android:text="@string/cea_no"/>
+
+      <TextView
+        android:id="@+id/agent_cea_number_tv"
+        style="@style/TextViewBase.ProfileContent"
+        android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <View style="@style/DivideLine.Grayish"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_44dp"
+      android:orientation="horizontal">
+
+      <TextView
+        style="@style/TextViewBase.ProfileTitle"
+        android:text="@string/agency"/>
+
+      <TextView
+        android:id="@+id/agent_agency_tv"
+        style="@style/TextViewBase.ProfileContent"
+        android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_44dp"
+      android:orientation="horizontal">
+
+      <TextView
+        style="@style/TextViewBase.ProfileTitle"
+        android:text="@string/licence"/>
+
+      <TextView
+        android:id="@+id/agent_licence_tv"
+        style="@style/TextViewBase.ProfileContent"
+        android:text="@string/app_name"/>
+    </LinearLayout>
+
+    <View style="@style/DivideLine.Grayish"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <TextView
+      style="@style/TextViewBase"
+      android:layout_marginTop="@dimen/margin_26dp"
+      android:paddingEnd="@dimen/padding_50dp"
+      android:paddingStart="@dimen/padding_50dp"
+      android:text="@string/confirm_profile"
+      android:textAlignment="center"
+      android:textColor="@color/black"/>
+
+    <TextView
+      android:id="@+id/confirm_profile_not_you_tv"
+      style="@style/TextViewBase"
+      android:layout_width="match_parent"
+      android:layout_marginTop="@dimen/margin_32dp"
+      android:gravity="center"
+      android:text="@string/not_you"
+      android:textAlignment="center"
+      android:textColor="@color/colorPrimary"/>
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/next_tv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    android:background="@color/button_color"
+    android:gravity="center"
+    android:text="@string/next"
+    android:textColor="@color/white"
+    android:textSize="@dimen/ts_16sp"
+    android:textStyle="bold"/>
+
+</LinearLayout>

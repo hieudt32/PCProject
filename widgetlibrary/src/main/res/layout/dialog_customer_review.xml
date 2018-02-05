@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog.Layout">
+
+    <ImageView
+        android:id="@+id/dialog_close_bt"
+        style="@style/Dialog.Icon.Close"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:background="@drawable/bg_dialog_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        style="@style/Dialog.Content"
+        android:layout_centerInParent="true">
+
+        <include layout="@layout/layout_dialog_customer_review"/>
+    </LinearLayout>
+
+</RelativeLayout>

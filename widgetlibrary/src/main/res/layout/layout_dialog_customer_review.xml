@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <font.app.gem.widget.ui.CFTextView
+        style="@style/Dialog.Text.Title"
+        android:text="@string/title_thank_you"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <font.app.gem.widget.ui.CFTextView
+            style="@style/Dialog.Text.Message"
+            android:layout_width="wrap_content"
+            android:text="@string/please_rate_our_service"
+            android:textStyle="bold"/>
+
+        <font.app.gem.widget.ui.CFTextView
+            android:id="@+id/customer_review_value_tv"
+            style="@style/Dialog.Text.Title"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/customer_review_sb"
+        android:layout_marginTop="@dimen/padding_normal"
+        style="@style/SeekBar"
+        android:progress="0"
+        android:max="10"/>
+
+    <font.app.gem.widget.ui.CFEditText
+        android:id="@+id/customer_review_et"
+        style="@style/Dialog.EditText"
+        android:layout_marginTop="@dimen/padding_large"
+        android:hint="@string/review_et_hint"
+        android:textColor="@color/grey"
+        android:gravity="left|top"/>
+
+    <font.app.gem.widget.ui.CFButton
+        android:id="@+id/customer_review_submit_bt"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_gravity="center"
+        android:text="@string/bt_ok"
+        style="@style/ButtonBase.Round.Pink.Alone"/>
+</LinearLayout>

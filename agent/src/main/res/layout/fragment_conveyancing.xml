@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical"
+  android:paddingBottom="@dimen/padding_24dp">
+
+  <customview.CustomHeaderView
+    android:id="@+id/conveyancing_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/conveyancing" />
+
+  <ScrollView
+    android:id="@+id/conveyancing_sv"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/SignOTPTitle"
+        android:text="@string/documents" />
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/conveyancing_document_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        style="@style/SignOTPTitle"
+        android:text="@string/loan_information" />
+
+      <LinearLayout
+        android:id="@+id/have_loan_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_48dp"
+          android:orientation="horizontal">
+
+          <View
+            android:id="@+id/have_loan_status_view"
+            android:layout_width="@dimen/size_12dp"
+            android:layout_height="@dimen/size_12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/margin_22dp"
+            android:layout_marginStart="@dimen/margin_30dp"
+            android:background="@drawable/yellow_circle_bg" />
+
+          <TextView
+            style="@style/TextViewBase.SignOTPSideTextView"
+            android:layout_gravity="center_vertical"
+            android:text="@string/have_a_loan" />
+
+          <RadioGroup
+            android:id="@+id/conveyancing_loan_rg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <RadioButton
+              android:id="@+id/conveyancing_loan_yes_btn"
+              style="@style/LoanRadioButton"
+              android:background="@drawable/bg_radio_loan_left"
+              android:text="@string/yes" />
+
+            <RadioButton
+              android:id="@+id/conveyancing_loan_no_btn"
+              style="@style/LoanRadioButton"
+              android:layout_marginStart="-1dp"
+              android:background="@drawable/bg_radio_loan_right"
+              android:text="@string/no" />
+          </RadioGroup>
+        </LinearLayout>
+
+
+        <RelativeLayout
+          android:id="@+id/conveyancing_select_bank_layout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginStart="@dimen/margin_30dp"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:visibility="gone">
+
+          <TextView
+            android:id="@+id/conveyancing_select_bank_tv"
+            style="@style/TextViewBase.TextUserTitle"
+            android:layout_centerVertical="true"
+            android:text="@string/select_bank" />
+
+          <ImageView
+            android:id="@+id/select_bank"
+            style="@style/ImageViewNext"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next" />
+        </RelativeLayout>
+      </LinearLayout>
+
+      <View
+        style="@style/DivideLine.LightGray"
+        android:layout_height="0.5dp" />
+
+      <LinearLayout
+        android:id="@+id/conveyancing_loan_information_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+          android:id="@+id/loan_status_view"
+          android:layout_width="@dimen/size_12dp"
+          android:layout_height="@dimen/size_12dp"
+          android:layout_gravity="center_vertical"
+          android:layout_marginEnd="@dimen/margin_22dp"
+          android:layout_marginStart="@dimen/margin_30dp"
+          android:background="@drawable/grey_circle_bg" />
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin_16dp"
+          android:layout_marginTop="@dimen/margin_16dp"
+          android:orientation="vertical">
+
+          <TextView
+            style="@style/TextViewBase.SignOTPSideTextView"
+            android:layout_marginBottom="@dimen/margin_4dp"
+            android:text="@string/loan_details" />
+
+          <TextView
+            style="@style/TextViewBase"
+            android:text="@string/owner_must_verify"
+            android:textColor="@color/tc_black54"
+            android:textSize="@dimen/ts_14sp" />
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

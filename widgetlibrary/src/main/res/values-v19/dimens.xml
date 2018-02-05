@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="icon_width">36dp</dimen>
+  <dimen name="icon_height">36dp</dimen>;
+  <dimen name="font_til_size">14sp</dimen>
+  <dimen name="header_view_height">56dp</dimen>
+
+  <dimen name="column_width">80dp</dimen>
+  <dimen name="space_status_bar">0dp</dimen>
+  <dimen name="action_bar_height">55dp</dimen>
+  <dimen name="booking_info_text_size">13sp</dimen>
+  <dimen name="discover_avatar_size">50dp</dimen>
+  <dimen name="text_size_action_bar">20sp</dimen>
+
+  <dimen name="cover_height_common">200dp</dimen>
+
+  <!-- Margin, padding-->
+  <dimen name="padding_very_small">2dp</dimen>
+  <dimen name="padding_small">4dp</dimen>
+  <dimen name="padding_medium">6dp</dimen>
+  <dimen name="padding_normal">8dp</dimen>
+  <dimen name="padding_large">16dp</dimen>
+  <dimen name="padding_grid_large">25dp</dimen>
+  <dimen name="padding_horizontal_recyclerview">21dp</dimen>
+
+  <dimen name="margin_normal">8dp</dimen>
+  <dimen name="margin_large">16dp</dimen>
+
+  <dimen name="item_margin">16dp</dimen>
+  <dimen name="item_margin_half">8dp</dimen>
+
+  <dimen name="item_padding_hor">16dp</dimen>
+  <dimen name="item_padding_ver">10dp</dimen>
+  <dimen name="padding_edt">25dp</dimen>
+  <dimen name="margin_avatar">5dp</dimen>
+
+  <dimen name="edt_round">3dp</dimen>
+
+  <dimen name="dialog_content_margin">5dp</dimen>
+  <dimen name="dialog_margin">40dp</dimen>
+  <dimen name="padding_button_horizontal">32dp</dimen>
+
+  <!-- Text size-->
+  <dimen name="ts_small">11sp</dimen>
+  <dimen name="ts_common">13sp</dimen>
+  <dimen name="ts_big">15sp</dimen>
+  <dimen name="ts_bigger">17sp</dimen>
+  <dimen name="ts_large">20sp</dimen>
+  <dimen name="ts_property_contract">12sp</dimen>
+  <dimen name="ts_subtitle">16sp</dimen>
+  <dimen name="ts_title">18sp</dimen>
+  <dimen name="dialog_icon_size">48dp</dimen>
+  <dimen name="button_padding">12dp</dimen>
+  <dimen name="ts_header">14sp</dimen>
+  <dimen name="thumb_progress_size">25dp</dimen>
+  <dimen name="thumb_progress_size_small">15dp</dimen>
+  <dimen name="dropdown_width">250dp</dimen>
+
+  <!-- Image view -->
+  <dimen name="iv_property_width">120dp</dimen>
+  <dimen name="iv_property_height">164dp</dimen>
+
+  <dimen name="tv_property_contract_height">16dp</dimen>
+  <dimen name="tv_property_info_height">24dp</dimen>
+  <dimen name="tv_property_name_height">32dp</dimen>
+
+</resources>

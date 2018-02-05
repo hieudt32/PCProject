@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="TitleAllCaps" parent="TextViewBase">
+    <item name="android:text">Title</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/ts_big</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="Booking">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/booking_info_text_size</item>
+  </style>
+
+  <style name="Booking.Title">
+    <item name="android:text">Title</item>
+    <item name="android:textColor">@color/booking_title_color</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:lines">1</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="Booking.Content">
+    <item name="android:text">Content</item>
+    <item name="android:textColor">@color/booking_content_color</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:lines">2</item>
+    <item name="android:maxLines">2</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="Booking.Content.SingleLine">
+    <item name="android:lines">1</item>
+    <item name="android:maxLines">1</item>
+  </style>
+
+  <style name="LineDashGrey">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@drawable/bg_dash_line_grey</item>
+    <item name="android:layerType">software</item>
+  </style>
+
+  <style name="TextViewBase.HeaderTitle">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_20sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:maxLines">1</item>
+  </style>
+
+  <style name="TextViewBase.HeaderText">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:ellipsize">end</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:layout_marginStart">@dimen/margin_8dp</item>
+    <item name="android:layout_centerVertical">true</item>
+  </style>
+
+  <style name="TabLayout">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="ViewPager">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+
+  <style name="DivideLine">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">0.5dp</item>
+  </style>
+
+  <style name="DivideLine.Black">
+    <item name="android:background">@color/black</item>
+  </style>
+
+  <style name="DivideLine.Gray">
+    <item name="android:background">@color/gray</item>
+  </style>
+
+  <style name="DivideLine.LightGray">
+    <item name="android:background">@color/light_gray</item>
+  </style>
+  <style name="DivideLine.Grayish">
+    <item name="android:background">@color/greyish</item>
+    <item name="android:alpha">0.65</item>
+  </style>
+
+  <style name="EditTextBase.Register">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:gravity">left</item>
+  </style>
+
+  <style name="EditTextBase.Verify">
+    <item name="android:layout_margin">@dimen/margin_0.2</item>
+    <item name="android:textSize">@dimen/ts_18sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="EditTextBase.User">
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:gravity">left</item>
+  </style>
+
+  <style name="TextViewBase.TitleText">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+
+  <style name="TextViewBase.HintDescription">
+    <item name="android:textColor">@color/text_common</item>
+    <item name="android:textSize">@dimen/ts_14sp</item>
+  </style>
+
+  <style name="TextViewBase.Description">
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_14sp</item>
+  </style>
+
+  <style name="TextViewBase.PropertyType">
+    <item name="android:textColor">@color/header_color</item>
+    <item name="android:textSize">@dimen/ts_24sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.TextLink">
+    <item name="android:textColor">@color/color_text_link</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="ImageButton">
+    <item name="android:layout_width">@dimen/size_40dp</item>
+    <item name="android:layout_height">@dimen/size_40dp</item>
+    <item name="android:src">@drawable/ic_close_image</item>
+    <item name="android:padding">@dimen/padding_8dp</item>
+    <item name="android:background">@drawable/custom_image_button</item>
+  </style>
+
+  <style name="TextViewBase.TextUserName">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+  <style name="TextViewBase.TextUserTitle">
+    <item name="android:textColor">@color/text_common</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+  <style name="TextViewBase.TitleCreateOtp">
+    <item name="android:layout_marginLeft">@dimen/margin_24dp</item>
+    <item name="android:textColor">@color/text_common</item>
+    <item name="android:textSize">@dimen/ts_14sp</item>
+  </style>
+
+  <style name="TextViewBase.InputCreateOtp">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/text_common</item>
+    <item name="android:textSize">@dimen/ts_18sp</item>
+  </style>
+
+  <style name="TextViewBase.StatusCreateOtp">
+    <item name="android:layout_marginRight">@dimen/margin_24dp</item>
+    <item name="android:textColor">@color/text_common</item>
+    <item name="android:textSize">@dimen/ts_14sp</item>
+  </style>
+
+  <style name="CreateOtpDescripion">
+    <item name="android:background">@color/gray</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/size_48dp</item>
+    <item name="android:layout_marginRight">@dimen/margin_24dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_8dp</item>
+    <item name="android:textColor">@color/text_common</item>
+    <item name="android:textSize">@dimen/ts_12sp</item>
+  </style>
+
+</resources>

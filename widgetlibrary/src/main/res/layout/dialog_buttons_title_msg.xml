@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog.Layout">
+
+    <ImageView
+        android:id="@+id/dialog_close_bt"
+        style="@style/Dialog.Icon.Close"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:background="@drawable/bg_dialog_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        style="@style/Dialog.Content"
+        android:layout_centerInParent="true">
+
+        <font.app.gem.widget.ui.CFTextView
+            android:id="@+id/dialog_title_tv"
+            android:text="@string/title_reject_dialog"
+            style="@style/Dialog.Text.Title"/>
+
+        <font.app.gem.widget.ui.CFTextView
+            android:id="@+id/dialog_msg_tv"
+            android:text="@string/msg_reject_dialog"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:layout_marginBottom="@dimen/padding_normal"
+            style="@style/Dialog.Text.Message"/>
+
+        <FrameLayout
+            android:id="@+id/dialog_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

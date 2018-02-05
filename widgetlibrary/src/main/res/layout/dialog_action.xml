@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_action_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_grey_shape"
+        android:paddingStart="@dimen/padding_10dp"
+        android:paddingEnd="@dimen/padding_10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_8dp"
+        android:background="#00ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_cancel_dialog"
+        style="@style/ActionDialogTextView"
+        android:padding="@dimen/padding_16dp"
+        android:background="@drawable/round_corner_white_shape"
+        android:text="@string/dialog_cancel"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+</LinearLayout>

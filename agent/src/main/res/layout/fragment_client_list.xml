@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/client_list_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_action_ic_src="@drawable/ic_add"
+    app:custom_header_title="@string/clients"/>
+
+  <EditText
+    android:id="@+id/client_list_search_et"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_8dp"
+    android:background="@drawable/round_grey_corner_shape"
+    android:hint="@string/search"
+    android:inputType="text"
+    android:imeOptions="actionSearch"
+    android:paddingBottom="@dimen/padding_12dp"
+    android:paddingEnd="@dimen/padding_24dp"
+    android:paddingStart="@dimen/padding_24dp"
+    android:paddingTop="@dimen/padding_12dp"
+    android:textColorHint="@color/tc_black38"
+    android:textSize="@dimen/ts_16sp"/>
+
+  <com.malinskiy.superrecyclerview.SuperRecyclerView
+    android:id="@+id/client_list_rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+  <RelativeLayout
+    android:id="@+id/client_list_empty_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:visibility="gone">
+
+    <ImageView
+      android:id="@+id/iv_profile"
+      android:layout_width="@dimen/size_121.8dp"
+      android:layout_height="@dimen/size_133dp"
+      android:layout_marginStart="@dimen/margin_121dp"
+      android:layout_marginTop="@dimen/margin_96dp"
+      android:src="@drawable/ic_empty_client"/>
+
+    <ImageView
+      android:layout_width="@dimen/size_34dp"
+      android:layout_height="@dimen/size_34dp"
+      android:layout_marginStart="@dimen/margin_221dp"
+      android:layout_marginTop="@dimen/margin_129dp"
+      android:src="@drawable/ic_add_client"/>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/iv_profile"
+      android:layout_marginEnd="@dimen/margin_88dp"
+      android:layout_marginStart="@dimen/margin_88dp"
+      android:layout_marginTop="@dimen/margin_23dp"
+      android:text="@string/client_list_empty_desc"
+      android:textAlignment="center"
+      android:textColor="@color/tc_black38"
+      android:textSize="@dimen/ts_16sp"/>
+
+  </RelativeLayout>
+
+</LinearLayout>

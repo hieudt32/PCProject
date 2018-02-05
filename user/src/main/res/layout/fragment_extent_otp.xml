@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_grey"
+              android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_title="@string/extent_otp"/>
+
+  <LinearLayout
+    android:id="@+id/otp_completion_date_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_13dp"
+    android:paddingLeft="@dimen/padding_30dp"
+    android:paddingTop="@dimen/padding_13dp">
+
+    <TextView
+      style="@style/TextViewBase"
+      android:text="OTP Completion date "
+      android:textColor="@color/tc_black87"
+      android:textSize="@dimen/ts_14sp"/>
+
+    <TextView
+      android:id="@+id/otp_completion_date_tv"
+      style="@style/TextViewBase"
+      android:layout_marginTop="@dimen/margin_2dp"
+      android:text="Mon 20 March 2017"
+      android:textColor="@color/tc_black38"
+      android:textSize="@dimen/ts_18sp"
+      android:textStyle="bold"/>
+  </LinearLayout>
+</LinearLayout>

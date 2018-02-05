@@ -1,0 +1,95 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/edit_profile_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:focusable="true"
+  android:focusableInTouchMode="true"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/edit_profile_custom_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_text="Cancel"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_title="@string/edit_profile"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_8dp"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/margin_20dp"
+    android:paddingTop="@dimen/margin_20dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+      android:id="@+id/edit_profile_avatar_sdv"
+      android:layout_width="@dimen/size_80dp"
+      android:layout_height="@dimen/size_80dp"
+      android:layout_centerInParent="true"
+      app:roundAsCircle="true"/>
+
+    <View
+      android:layout_width="@dimen/size_80dp"
+      android:layout_height="@dimen/size_80dp"
+      android:layout_centerInParent="true"
+      android:background="@drawable/black_transparent_circle_shape"/>
+
+    <View
+      android:id="@+id/setup_profile_add"
+      android:layout_width="@dimen/size_36dp"
+      android:layout_height="@dimen/size_36dp"
+      android:layout_centerInParent="true"
+      android:background="@drawable/ic_add"/>
+
+  </RelativeLayout>
+
+  <app.positiveculture.com.agent.customview.CustomProfileForm
+    android:id="@+id/edit_profile_name_form"
+    style="@style/CustomProfileForm"
+    app:form_title="@string/full_name"
+    app:title_text_color="@color/tc_black38"/>
+
+  <app.positiveculture.com.agent.customview.CustomProfileForm
+    android:id="@+id/edit_profile_phone_form"
+    style="@style/CustomProfileForm"
+    app:form_title="@string/phone"
+    app:title_text_color="@color/tc_black38"/>
+
+  <app.positiveculture.com.agent.customview.CustomProfileForm
+    android:id="@+id/edit_profile_email_form"
+    style="@style/CustomProfileForm"
+    android:layout_marginBottom="@dimen/margin_8dp"
+    app:form_title="@string/email"
+    app:is_editable="true"
+    app:content_text_color="@color/tc_black87"/>
+
+  <app.positiveculture.com.agent.customview.CustomProfileForm
+    android:id="@+id/edit_profile_cea_form"
+    style="@style/CustomProfileForm"
+    app:form_title="@string/cea"
+    app:title_text_color="@color/tc_black38"/>
+
+  <app.positiveculture.com.agent.customview.CustomProfileForm
+    android:id="@+id/edit_profile_agency_form"
+    style="@style/CustomProfileForm"
+    android:layout_marginBottom="@dimen/margin_8dp"
+    app:form_title="@string/agency"
+    app:title_text_color="@color/tc_black38"/>
+
+  <app.positiveculture.com.agent.customview.CustomProfileForm
+    android:id="@+id/edit_profile_bank_form"
+    style="@style/CustomProfileForm"
+    app:action_image="@drawable/ic_next"
+    app:form_title="@string/bank"/>
+
+  <app.positiveculture.com.agent.customview.CustomProfileForm
+    android:id="@+id/edit_profile_nric_form"
+    style="@style/CustomProfileForm"
+    app:action_image="@drawable/ic_next"
+    app:form_title="@string/nric"/>
+
+</LinearLayout>

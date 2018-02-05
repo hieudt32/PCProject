@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_16dp"
+    android:paddingEnd="24dp"
+    android:paddingStart="24dp">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="@dimen/size_80dp"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/TextViewBase.TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/floor_size" />
+
+      <EditText
+        android:id="@+id/floor_size_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="0"
+        android:imeOptions="actionDone"
+        android:inputType="number|numberDecimal"
+        android:maxLines="1"
+        android:textColor="@color/header_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/floor_size_landed_ll"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/size_80dp"
+      android:layout_marginStart="22dp"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/TextViewBase.TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/floor_size_landed" />
+
+      <EditText
+        android:id="@+id/floor_size_landed_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="0"
+        android:imeOptions="actionDone"
+        android:inputType="number|numberDecimal"
+        android:maxLines="1"
+        android:textColor="@color/header_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+  </LinearLayout>
+
+  <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/padding_24dp"
+    android:paddingStart="@dimen/padding_24dp">
+
+    <RadioButton
+      android:id="@+id/sqft_rbt"
+      android:layout_width="@dimen/size_66dp"
+      android:layout_height="@dimen/size_32dp"
+      android:background="@drawable/bg_radio"
+      android:button="@null"
+      android:checked="true"
+      android:gravity="center"
+      android:text="@string/sqft"
+      android:textColor="@drawable/text_color_radio"
+      android:textSize="@dimen/ts_16sp" />
+
+    <RadioButton
+      android:id="@+id/sqm_rbt"
+      android:layout_width="@dimen/size_66dp"
+      android:layout_height="@dimen/size_32dp"
+      android:background="@drawable/bg_radio"
+      android:button="@null"
+      android:gravity="center"
+      android:text="@string/sqm"
+      android:textColor="@drawable/text_color_radio"
+      android:textSize="@dimen/ts_16sp" />
+  </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+  <string name="forgot_password">Forgot your passwords ?</string>
+  <string name="email_or_user">Email or username</string>
+  <string name="login">Login</string>
+  <string name="full_name">Full name</string>
+  <string name="phone">Phone</string>
+  <string name="setup_profile">Setup Profile</string>
+  <string name="update">Update</string>
+  <string name="new_password">New Password</string>
+  <string name="confirm_password">Confirm Password</string>
+  <string name="change_password">Change Password</string>
+  <string name="messenger_forgot_password">We’ve just emailed you at “</string>
+  <string name="messenger_forgot_password2">”. Check out your inbox to reset your password.</string>
+  <string name="email_address_or_user">Email address or username</string>
+  <string name="forgot_password_des">Enter your email address and we’ll send you a link to reset your password.</string>
+
+  <string name="status_login"> By creating an account, you agree to our</string>
+  <string name="terms_conditions">Terms &amp; Conditions</string>
+  <string name="privacy_policy">Privacy Policy.</string>
+  <string name="skip">Skip</string>
+
+  <string name="agent">agent</string>
+  <string name="positive_culture">positive\nculture</string>
+  <string name="skip_login_flow">Skip Login Flow</string>
+  <string name="register_as_new_agent">Register as new Agent</string>
+  <string name="member">member</string>
+  <string name="mobile">Mobile</string>
+  <string name="setup_profile_messenger_name">Please provide your name</string>
+  <string name="setup_profile_messenger_email_1">Please enter a valid email address</string>
+  <string name="setup_profile_messenger_email_2">The email invalidate</string>
+  <string name="setup_profile_messenger_phone_1">Please enter a valid mobile address</string>
+  <string name="setup_profile_messenger_phone_2">Phone number should be at least 8 digits</string>
+  <string name="first_name">First Name</string>
+  <string name="last_name">Last Name</string>
+  <string name="report_message">A new One-Time Pin has been sent to your mobile via SMS.</string>
+  <string name="sent_button">Sent!</string>
+  <string name="send">Send</string>
+  <string name="otp_expired_message">Your One-Time Pin has expired. Please tap \"Resend One-Time Pin\" for a new One-Time Pin to be sent to your registered number</string>
+  <string name="otp_expired_title">OTP Expired</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+>
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+    >
+        <ImageView
+            android:id="@+id/til_icon_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star_0"
+        />
+        <font.app.gem.widget.ui.CFTextView
+            android:id="@+id/til_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/til_icon_left"
+            android:paddingLeft="10dp"
+            android:text="ARCHIVERMENT AND RATING"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_til_size"
+            android:textStyle="bold"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

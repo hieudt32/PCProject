@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog.Layout">
+
+    <LinearLayout
+        android:background="@drawable/bg_dialog_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        style="@style/Dialog.Content"
+        android:layout_centerInParent="true">
+
+        <font.app.gem.widget.ui.CFTextView
+            android:id="@+id/dialog_title_tv"
+            android:text="@string/bt_submit"
+            android:textStyle="bold"
+            android:visibility="gone"
+            style="@style/Dialog.Text.Title"/>
+
+        <font.app.gem.widget.ui.CFTextView
+            android:id="@+id/dialog_msg_tv"
+            android:text="@string/bt_submit"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            style="@style/Dialog.Text.Message"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

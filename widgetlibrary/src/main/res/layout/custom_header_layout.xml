@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:ignore="MissingPrefix"
+
+>
+    <RelativeLayout android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+    >
+
+        <ImageView android:id="@+id/ic_left"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"
+                   android:paddingLeft="16dp"
+                   android:paddingRight="32dp"
+                   android:visibility="gone"
+        />
+        <ImageView android:id="@+id/ic_left_2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"
+                   android:paddingLeft="14dp"
+                   android:paddingRight="50dp"
+                   android:visibility="gone"
+
+        />
+
+
+        <font.app.gem.widget.ui.CFTextView
+            font="@string/font_name_avenir"
+            android:id="@+id/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_title"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/ic_left"
+        />
+        <font.app.gem.widget.ui.CFTextView
+            font="@string/font_name_avenir"
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_title"
+            android:textStyle="bold"
+
+        />
+        <font.app.gem.widget.ui.CFTextView
+            font="@string/font_name_avenir"
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="8dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_title"
+            android:visibility="gone"
+
+        />
+        <ImageView android:id="@+id/ic_right"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:paddingLeft="50dp"
+                   android:paddingRight="14dp"
+                   android:visibility="gone"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

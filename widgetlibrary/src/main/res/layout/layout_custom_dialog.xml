@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="@dimen/margin_52dp"
+  android:background="@drawable/round_dialog_bg"
+  android:orientation="vertical"
+  android:paddingTop="@dimen/margin_15dp">
+
+  <TextView
+    android:id="@+id/dialog_title_tv"
+    style="@style/TextViewBase.TitleDialog"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:maxLines="1"
+    android:text="@string/confirm_purchase"
+    android:textAllCaps="false"
+    android:textSize="@dimen/ts_17sp"
+    android:textStyle="bold" />
+
+  <TextView
+    android:id="@+id/dialog_des_tv"
+    style="@style/TextViewBase.ContentDialog"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginEnd="@dimen/margin_12dp"
+    android:layout_marginStart="@dimen/margin_12dp"
+    android:layout_marginTop="@dimen/margin_8.5dp" />
+
+  <View
+    style="@style/DivideLine.Grayish"
+    android:layout_marginTop="@dimen/margin_21.5dp" />
+
+  <LinearLayout
+    android:id="@+id/layout_one_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@color/gray"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <TextView
+      android:id="@+id/dialog_submit_tv"
+      style="@style/TextViewBase.TitleDialog"
+      android:layout_width="match_parent"
+      android:padding="@dimen/padding_12dp"
+      android:text="@string/ok"
+      android:textAlignment="center"
+      android:textColor="@color/light_blue" />
+  </LinearLayout>
+
+  <RelativeLayout
+    android:id="@+id/layout_two_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <TextView
+      android:id="@+id/dialog_cancel_tv"
+      style="@style/TextViewBase.TitleDialogButton"
+      android:layout_toStartOf="@+id/view_line_devider"
+      android:text="@string/cancel" />
+
+    <View
+      android:id="@+id/view_line_devider"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_centerHorizontal="true" />
+
+    <TextView
+      android:id="@+id/dialog_ok_tv"
+      style="@style/TextViewBase.TitleDialogButton"
+      android:layout_toEndOf="@+id/view_line_devider"
+      android:text="@string/ok" />
+
+  </RelativeLayout>
+</LinearLayout>

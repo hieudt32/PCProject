@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+      android:id="@+id/select_owners_hd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_header_action_ic_src="@drawable/ic_add"
+      app:custom_header_left_action_ic_src="@drawable/ic_close_"
+      app:custom_header_title="@string/select_owners" />
+
+    <EditText
+      android:id="@+id/search_owners_et"
+      style="@style/EditTextBase.CreateProperty"
+      android:background="@color/silver"
+      android:hint="@string/search"
+      android:imeOptions="actionSearch" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_48dp"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingEnd="@dimen/padding_16dp"
+      android:paddingStart="@dimen/padding_16dp">
+
+      <TextView
+        style="@style/TextViewBase.ItemView"
+        android:text="@string/add"
+        android:textSize="@dimen/ts_14sp" />
+
+      <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:scrollbarSize="@dimen/size_1dp"
+        android:scrollbarThumbHorizontal="@drawable/style_scroll_textview">
+
+        <TextView
+          android:id="@+id/owners_selected_tv"
+          style="@style/TextViewBase.StatusItemView"
+          android:ellipsize="end"
+          android:scrollHorizontally="true"
+          android:textSize="@dimen/ts_14sp" />
+      </HorizontalScrollView>
+    </LinearLayout>
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView
+      android:id="@+id/select_owners_rv"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      app:scrollbarStyle="insideInset" />
+
+    <customview.CustomButton
+      android:id="@+id/next_select_owners_cb"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_48dp"
+      app:custom_button_text="@string/next" />
+  </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_grey">
+
+    <customview.CustomHeaderView
+        android:id="@+id/client_profile_header_view"
+        app:custom_header_title="@string/client"
+        app:custom_header_left_action_ic_src="@drawable/ic_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/client_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="@dimen/padding_16dp"
+        android:paddingBottom="@dimen/padding_16dp"
+        android:paddingStart="@dimen/padding_24dp"
+        android:paddingEnd="@dimen/padding_24dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/client_profile_avatar_sdv"
+            app:roundAsCircle="true"
+            app:placeholderImage="@drawable/ic_avatar"
+            android:layout_width="@dimen/size_56dp"
+            android:layout_height="@dimen/size_56dp" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/client_profile_name_tv"
+                android:text="@string/henry_smith"
+                style="@style/TextViewBase.ClientProfileName" />
+
+            <TextView
+                android:id="@+id/client_profile_property_tv"
+                style="@style/TextViewBase.ClientProfileProperty" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/ic_next"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/size_24dp"
+            android:layout_height="@dimen/size_24dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/DivideLine.Grayish"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/client_profile_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_44dp"
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/header_color"
+        app:tabIndicatorHeight="@dimen/margin_3dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        app:tabSelectedTextColor="@color/header_color"
+        app:tabTextAppearance="@style/CustomTabTextAppearance"
+        app:tabTextColor="@color/tc_black38"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/client_profile_pager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

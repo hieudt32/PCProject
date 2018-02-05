@@ -1,0 +1,316 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white">
+
+  <LinearLayout
+    android:id="@+id/create_otp_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+      android:id="@+id/close_create_otp_hv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:custom_header_left_action_ic_src="@drawable/ic_close_"
+      app:custom_header_title="@string/create_otp"/>
+
+    <customview.CustomCreateOtp
+      android:id="@+id/hdb_serial_number_cc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_create_otp_text="@string/hdb_searial_number"
+      app:custom_create_otp_text_hint="@string/hdb_serial"/>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <customview.CustomCreateOtp
+      android:id="@+id/hdb_timestamp_cc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_create_otp_text="@string/hdb_otp_timestamp"
+      app:custom_create_otp_text_hint="@string/date_hdb_otp_timestamp"/>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <customview.CustomCreateOtp
+      android:id="@+id/hdb_appointment_cc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_create_otp_text="@string/hdb_appointment"
+      app:custom_create_otp_text_hint="@string/hdb_appointment_day"/>
+
+    <View
+      style="@style/DivideLine.LightGray"
+      android:layout_height="@dimen/size_8dp"/>
+
+    <customview.CustomCreateOtp
+      android:id="@+id/otp_start_date_cc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_create_otp_text="@string/otp_start_date"
+      app:custom_create_otp_text_hint="@string/date_otp_start"/>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <LinearLayout
+      style="@style/CustomCreateOtp">
+
+      <customview.CustomCreateOtp
+        android:id="@+id/weeks_to_expiry_cc"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.4"
+        app:custom_create_otp_text="@string/weeks_to_expiry"
+        app:custom_create_otp_text_hint="@string/two"/>
+
+      <View
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"/>
+
+      <TextView
+        android:id="@+id/date_weeks_to_expiry"
+        style="@style/StatusCreateOtpDateTime"
+        android:text="@string/mon_3_april_2017"/>
+    </LinearLayout>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <LinearLayout
+      style="@style/CustomCreateOtp">
+
+      <customview.CustomCreateOtp
+        android:id="@+id/weeks_to_completion"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        app:custom_create_otp_text="@string/weeks_to_completion"
+        app:custom_create_otp_text_hint="@string/eight"/>
+
+      <View
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"/>
+
+      <TextView
+        android:id="@+id/date_weeks_to_completion"
+        style="@style/StatusCreateOtpDateTime"
+        android:layout_gravity="end"
+        android:text="@string/mon_3_april_2017"/>
+
+    </LinearLayout>
+
+    <View
+      style="@style/DivideLine.LightGray"
+      android:layout_height="@dimen/size_8dp"/>
+
+    <customview.CustomCreateOtp
+      android:id="@+id/total_price_cc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_create_otp_text="@string/total_price"
+      app:custom_text_start_otp="@string/ss"/>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <LinearLayout
+      style="@style/CustomCreateOtp">
+
+      <customview.CustomCreateOtp
+        android:id="@+id/option_fee_cc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:custom_create_otp_text="@string/option_fee"
+        app:custom_text_start_otp="@string/ss"/>
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+      <customview.CustomCreateOtp
+        android:id="@+id/exercise_fee_cc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:custom_create_otp_text="@string/exercise_fee"
+        app:custom_text_start_otp="@string/ss"/>
+    </LinearLayout>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <app.positiveculture.com.agent.customview.ItemSummaryCustom
+      android:id="@+id/solicitor_next_sc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:content_item_summary="@string/positive_culture_pl_tv"
+      app:icon_next_summary="@drawable/ic_next"
+      app:text_color_item_summary="@color/text_common"
+      app:title_item_summary="@string/solicitor"/>
+
+    <View
+      style="@style/DivideLine.LightGray"
+      android:layout_height="@dimen/size_8dp"/>
+
+    <RelativeLayout
+      android:id="@+id/select_agent_rl"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/padding_10dp">
+
+      <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/avatar_member_otp"
+        android:layout_width="@dimen/size_56dp"
+        android:layout_height="@dimen/size_56dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_14dp"
+        app:placeholderImage="@drawable/avatar_icon"
+        app:placeholderImageScaleType="centerCrop"
+        app:roundAsCircle="true"/>
+
+      <ImageView
+        android:id="@+id/member_next_iv"
+        android:layout_width="@dimen/size_24dp"
+        android:layout_height="@dimen/size_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:src="@drawable/ic_next"/>
+
+      <TextView
+        android:id="@+id/member_next_tv"
+        style="@style/TextViewBase.TitleText"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/avatar_member_otp"
+        android:paddingStart="@dimen/padding_10dp"
+        android:text="@string/assign_buyer_agent"
+        android:textColor="@color/color_text_link"/>
+    </RelativeLayout>
+
+    <TextView
+      style="@style/TextViewBase.TitleText"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_48dp"
+      android:background="@color/silver"
+      android:gravity="bottom"
+      android:paddingBottom="@dimen/margin_7dp"
+      android:paddingStart="@dimen/padding_24dp"
+      android:text="@string/Commission_payable_to_seller_agent"
+      android:textColor="@color/text_common"
+      android:textSize="@dimen/ts_16sp"/>
+
+    <LinearLayout
+      style="@style/CustomCreateOtp">
+
+      <customview.CustomCreateOtp
+        android:id="@+id/exact_amount_cc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:custom_create_otp_text="@string/exact_amount"
+        app:custom_text_start_otp="@string/ss"/>
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+      <customview.CustomCreateOtp
+        android:id="@+id/percent_cc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:custom_create_otp_text="@string/percent_user"
+        app:custom_create_otp_text_hint="0"
+        app:custom_text_end_otp="%"/>
+    </LinearLayout>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_48dp"
+      android:background="@color/silver"
+      android:paddingEnd="@dimen/padding_24dp"
+      android:paddingStart="@dimen/padding_24dp"
+      android:paddingTop="@dimen/padding_8dp"
+      android:text="@string/description"
+      android:textColor="@color/tc_black38"
+      android:textSize="@dimen/ts_12sp"/>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <LinearLayout
+      style="@style/CustomCreateOtp">
+
+      <TextView
+        style="@style/TextViewBase.TitleText"
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_24dp"
+        android:text="@string/and_or_nominee"/>
+
+      <View
+        android:layout_width="@dimen/size_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"/>
+
+      <Switch
+        android:id="@+id/and_or_nominee_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_24dp"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        android:theme="@style/MySwitch"/>
+    </LinearLayout>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <app.positiveculture.com.agent.customview.ItemSummaryCustom
+      android:id="@+id/create_furnishing_ic"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:content_item_bold="true"
+      app:content_item_summary="@string/furnishing"
+      app:icon_next_summary="@drawable/ic_next"
+      app:text_color_item_summary="@color/text_common"
+      app:title_item_summary="@string/furnishing"/>
+
+    <View
+      style="@style/DivideLine.LightGray"/>
+
+    <app.positiveculture.com.agent.customview.ItemSummaryCustom
+      android:id="@+id/create_tenancy_ic"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:content_item_bold="true"
+      app:content_item_summary="@string/tenancy"
+      app:icon_next_summary="@drawable/ic_next"
+      app:text_color_item_summary="@color/text_common"
+      app:title_item_summary="@string/tenancy"/>
+
+    <customview.CustomButton
+      android:id="@+id/next_otp_contract"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:custom_button_text="@string/generate"/>
+  </LinearLayout>
+</ScrollView>

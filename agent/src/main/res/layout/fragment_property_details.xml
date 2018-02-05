@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/property_detail_ll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/property_detail_hd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="Property Details" />
+
+  <app.positiveculture.com.agent.customview.StepIndicatorHorizontal
+    android:id="@+id/property_detail_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <ScrollView
+    android:id="@+id/property_detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_24dp">
+
+        <customview.CustomPropertyDetails
+          android:id="@+id/rooms_cpd"
+          style="@style/CustomPropertyDetails"
+          android:layout_marginTop="@dimen/size_6dp"
+          app:custom_property_details_color="@color/header_color"
+          app:custom_property_details_title="@string/rooms"
+          app:custom_property_details_value="@string/studio" />
+
+        <customview.CustomPropertyDetails
+          android:id="@+id/plus_room_cpd"
+          style="@style/CustomPropertyDetails"
+          android:layout_marginTop="@dimen/margin_16dp"
+          app:custom_property_details_color="@color/hint_text_alpha"
+          app:custom_property_details_title="@string/plus_rooms"
+          app:custom_property_details_value="0" />
+
+        <customview.CustomPropertyDetails
+          android:id="@+id/bathrooms_cpd"
+          style="@style/CustomPropertyDetails"
+          android:layout_marginTop="@dimen/margin_16dp"
+          app:custom_property_details_color="@color/hint_text_alpha"
+          app:custom_property_details_title="@string/bathrooms"
+          app:custom_property_details_value="0" />
+      </LinearLayout>
+
+      <View
+        style="@style/DivideLine.Grayish"
+        android:layout_marginEnd="@dimen/padding_24dp"
+        android:layout_marginStart="@dimen/padding_24dp" />
+
+      <app.positiveculture.com.agent.customview.CustomSmallInput
+        android:id="@+id/custom_small_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_49dp"
+        android:layout_marginTop="@dimen/margin_20dp" />
+    </LinearLayout>
+  </ScrollView>
+
+  <customview.CustomButton
+    android:id="@+id/next_property_detail_cb"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    app:custom_button_text="@string/next" />
+</LinearLayout>

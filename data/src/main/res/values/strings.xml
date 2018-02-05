@@ -1,0 +1,38 @@
+<resources>
+  <string name="msg_server_error">Sorry, it seems that there has been an error. Please try again</string>
+
+  <string name="NOT_FOUND_MSG">Resource Not Found</string>
+  <string name="UNPROCESSABLE_ENTITY_MSG">Unprocessable entity</string>
+  <string name="PHONE_NOT_FOUND_MSG">Phone number not found</string>
+  <string name="FAIL_TO_SEND_SMS_MSG">Fail to send sms, please try again later</string>
+  <string name="FAIL_TO_SEND_EMAIL_MSG">Fail to send mail, please try again later</string>
+  <string name="INVALID_MEMBER_EMAIL_MSG">The email of member is invalid</string>
+  <string name="USER_NOT_FOUND_MSG">User not found</string>
+  <string name="WRONG_CREDENTIAL_MSG">You have entered an incorrect email or password. Please try again.</string>
+  <string name="EMAIL_ALREADY_EXISTED_MSG">Email already existed, please use a different email and try again</string>
+  <string name="CEA_NO_DOES_NOT_EXIST_MSG">Cea No does not exist or has been deleted</string>
+  <string name="INVALID_SMS_TOKEN_MSG">Invalid sms token</string>
+  <string name="AGENT_ALREADY_REGISTERED_MSG">There is already agent registered with provided CEA No, please login</string>
+  <string name="UNAUTHORIZED_MSG">Authorization Required</string>
+  <string name="INVALID_TOKEN_MSG">Invalid token</string>
+  <string name="PASSWORD_FOUND_MSG">The new password must different old password</string>
+  <string name="USER_TOKEN_MISS_MSG">The user token is require</string>
+  <string name="USER_DUPLICATE_MSG">Duplicate member</string>
+  <string name="PERMISSION_DENIED">Permission denied.</string>
+  <string name="ONLY_AGENT_ROLE_ALLOWED_MSG">Permission denied, only agent role is allowed</string>
+  <string name="ONLY_VERIFIED_AGENT_ALLOWED_MSG">Permission denied, only agent with verified status is allowed</string>
+  <string name="INTERNAL_SERVER_ERROR_MSG">Internal server error</string>
+  <string name="IMAGE_ERROR_LIMIT_MSG">Please upload maximum 6 image for each property</string>
+  <string name="USER_NOT_IN_CONTACT_MSG">There is user not in your contact list, please check again</string>
+  <string name="FAIL_TO_SEND_SMS_ERROR_MESSAGE">Send sms error, please check again</string>
+  <string name="INVALID_OTP_MSG">You have entered an incorrect One-Time Pin, please try again.</string>
+  <string name="EXPIRED_OTP_MSG">Your One-Time Pin has expired. Please tap "Resend One-Time Pin" for a new One-Time Pin to be send to your registered number.</string>
+  <string name="CHECK_CEA_ERROR">We are unable to find your profile. Please enter the correct information registered with CEA and try again. Contact Positive Culture if problem persists</string>
+
+  <string name="invalid_email_title">Invalid Email Address</string>
+  <string name="invalid_email_msg">Please enter a valid email address for the account</string>
+  <string name="invalid_password_title">Invalid Password</string>
+  <string name="invalid_password_msg">Password minimum 8 characters with at least 1 alphabet and 1 numeric.</string>
+  <string name="positive_culture_title">Positive Culture</string>
+  <string name="invalid_pc_msg">A sign in has been detected on another device. Please sign out of the other device and sign in again.</string>
+</resources>

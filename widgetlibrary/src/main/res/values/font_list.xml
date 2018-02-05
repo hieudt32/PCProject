@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="font_style_extra_light">10</integer>
+    <integer name="font_style_extra_bold">11</integer>
+    <integer name="font_style_regular">0</integer>
+    <integer name="font_style_bold">1</integer>
+    <string name="font_name_fontawesome">fontawesome</string>
+    <string name="font_name_source_sans_pro">SourceSansPro</string>
+    <string name="font_name_avenir">AvenirFont</string>
+    <string name="font_awesome">fontawesome.ttf</string>
+    <string name="font_bold">SourceSansPro-Bold.ttf</string>
+    <string name="font_italic">SourceSansPro-Italic.ttf</string>
+    <string name="font_bold_italic">SourceSansPro-BoldItalic.ttf</string>
+    <string name="font_extra_light">SourceSansPro-ExtraLight.ttf</string>
+    <string name="font_extra_bold">SourceSansPro-Black.ttf</string>
+    <string name="font_regular">SourceSansPro-Regular.ttf</string>
+    <string name="font_avenir_regular">Avenir.ttc</string>
+    <string name="font_avenir_bold">AvenirBold.ttc</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_10dp"
+    android:background="@android:color/black"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_1dp">
+  <View android:id="@+id/step1_view"
+        style="@style/StepIndicator"/>
+  <View android:id="@+id/step2_view"
+        style="@style/StepIndicator"/>
+  <View android:id="@+id/step3_view"
+        style="@style/StepIndicator"/>
+  <View android:id="@+id/step4_view"
+        style="@style/StepIndicator"/>
+  <View android:id="@+id/step5_view"
+        style="@style/StepIndicator"/>
+  <View android:id="@+id/step6_view"
+        style="@style/StepIndicator"/>
+  <View android:id="@+id/step7_view"
+        style="@style/StepIndicator"/>
+</LinearLayout>

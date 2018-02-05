@@ -1,0 +1,18 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical">
+
+  <com.malinskiy.superrecyclerview.SuperRecyclerView
+    android:id="@+id/user_complete_rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+  <include
+    android:id="@+id/user_complete_empty_layout"
+    layout="@layout/empty_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"/>
+</RelativeLayout>

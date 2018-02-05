@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog.Layout">
+
+  <LinearLayout
+      style="@style/Dialog.Content"
+      android:layout_above="@+id/dialog_close_bt"
+      android:layout_marginBottom="@dimen/dialog_margin"
+      android:background="@drawable/bg_dialog_content"
+      android:orientation="vertical">
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_title_tv"
+        style="@style/Dialog.Text.Title"
+        android:text="@string/title_reject_dialog"/>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_msg_tv"
+        style="@style/Dialog.Text.Message"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/padding_normal"
+        android:text="@string/msg_reject_dialog"/>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_reschedule_time_tv"
+        style="@style/Dialog.Button.Grey"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:text="@string/reschedule_another_time"/>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_reschedule_date_tv"
+        style="@style/Dialog.Button.Grey"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:text="@string/reschedule_another_date"/>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_other_reason_tv"
+        style="@style/Dialog.Button.Grey"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:text="@string/other_reason"/>
+
+    <font.app.gem.widget.ui.CFEditText
+        android:id="@+id/dialog_other_reason_et"
+        style="@style/Dialog.EditText"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:gravity="top|left"
+        android:hint="@string/enter_your_reason"
+        android:textColorHint="@color/bt_grey"
+        android:visibility="gone"/>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_submit_tv"
+        style="@style/ButtonBase.Round.Pink"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_large"
+        android:text="@string/bt_submit"/>
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/dialog_close_bt"
+      style="@style/Dialog.Icon.Close"
+      android:layout_gravity="center"/>
+
+</RelativeLayout>

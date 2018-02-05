@@ -1,0 +1,65 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/custom_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_title="@string/verify_email_header"/>
+
+  <TextView
+    android:id="@+id/verify_email_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_16dp"
+    android:layout_marginStart="@dimen/margin_16dp"
+    android:layout_marginTop="@dimen/margin_16dp"
+    android:gravity="left"
+    android:textSize="@dimen/ts_16sp"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_16dp"
+    android:layout_marginStart="@dimen/margin_16dp"
+    android:visibility="gone"
+    tools:ignore="WebViewLayout">
+
+    <WebView
+      android:id="@+id/verify_email_web_view_1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="@dimen/margin_16dp"
+      android:padding="0dp"
+      android:visibility="visible"/>
+
+    <WebView
+      android:id="@+id/verify_email_web_view_2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/verify_email_web_view_1"
+      android:layout_marginBottom="@dimen/margin_12dp"
+      android:layout_marginTop="-15dp"
+      android:padding="0dp"
+      android:visibility="visible"/>
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/ok_tv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    android:layout_marginTop="@dimen/margin_12dp"
+    android:background="@color/button_color"
+    android:gravity="center"
+    android:text="@string/bt_ok"
+    android:textColor="@color/white"
+    android:textSize="@dimen/ts_16sp"
+    android:textStyle="bold"/>
+</LinearLayout>

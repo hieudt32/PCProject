@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/add_photo_item_rl"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/size_112dp"
+  android:background="@color/white">
+
+  <RelativeLayout
+    style="@style/DashBorder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_6dp"
+    android:background="@drawable/dash_border_bg"/>
+
+  <TextView
+    style="@style/TextViewBase"
+    android:layout_centerInParent="true"
+    android:text="@string/add_photo"
+    android:textSize="@dimen/ts_16sp"
+    android:textStyle="bold"/>
+</RelativeLayout>

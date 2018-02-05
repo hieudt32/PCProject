@@ -1,0 +1,28 @@
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+      android:id="@+id/documents_hd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_header_left_action_ic_src="@drawable/ic_back"
+      app:custom_header_title="@string/documents"/>
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/list_documents_rv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_16dp"
+      android:background="@color/white"/>
+  </LinearLayout>
+
+</FrameLayout>

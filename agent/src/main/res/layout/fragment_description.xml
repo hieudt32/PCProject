@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:fitsSystemWindows="true">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:fillViewport="true">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/silver"
+      android:orientation="vertical">
+
+      <customview.CustomHeaderView
+        android:id="@+id/description_hd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:custom_header_left_action_ic_src="@drawable/ic_back"
+        app:custom_header_title="@string/description" />
+
+      <app.positiveculture.com.agent.customview.StepIndicatorHorizontal
+        android:id="@+id/description_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+          android:id="@+id/description_et"
+          android:hint="@string/create_property_description_hint"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/silver"
+          android:gravity="top"
+          android:maxLength="@integer/length_1000"
+          android:padding="@dimen/padding_24dp"
+          android:textColor="@color/tc_black54" />
+
+        <TextView
+          android:id="@+id/length_tv"
+          style="@style/TextViewBase.Description"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"
+          android:layout_margin="@dimen/margin_14dp"
+          android:text="@string/length_1000"
+          android:textColor="@color/tc_black38" />
+      </RelativeLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <customview.CustomButton
+    android:id="@+id/next_description_cb"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    app:custom_button_text="@string/next" />
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/location_address_ll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/location_address_hd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/location"/>
+
+  <app.positiveculture.com.agent.customview.StepIndicatorHorizontal
+    android:id="@+id/location_address_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <android.support.v4.widget.NestedScrollView
+    android:id="@+id/location_address_body"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/silver">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_16dp">
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:weightSum="4">
+
+          <TextView
+            android:id="@+id/textView"
+            style="@style/TextViewBase.TitleText"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="1"
+            android:text="@string/address"/>
+
+          <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <EditText
+              android:id="@+id/floor_edt"
+              style="@style/AddressEditText"
+              android:layout_width="wrap_content"
+              android:gravity="end"
+              android:hint="@string/floor"
+              android:minWidth="@dimen/size_32dp"
+              android:nextFocusDown="@+id/unit_edt"
+              android:paddingEnd="@dimen/padding_10dp"
+              android:paddingStart="@dimen/size_10dp"/>
+
+            <View
+              android:id="@+id/line_center"
+              android:layout_width="@dimen/size_5dp"
+              android:layout_height="@dimen/margin_1.4dp"
+              android:layout_centerVertical="true"
+              android:layout_gravity="center_vertical"
+              android:layout_marginEnd="@dimen/margin_5dp"
+              android:layout_marginStart="@dimen/margin_5dp"
+              android:layout_toEndOf="@id/floor_edt"
+              android:background="@color/tc_black38"/>
+
+            <EditText
+              android:id="@+id/unit_edt"
+              style="@style/AddressEditText"
+              android:layout_width="wrap_content"
+              android:layout_toEndOf="@id/line_center"
+              android:gravity="start"
+              android:hint="@string/unit"
+              android:minWidth="@dimen/size_32dp"
+              android:nextFocusDown="@+id/building_edt"
+              android:paddingEnd="@dimen/size_10dp"
+              android:paddingStart="@dimen/padding_10dp"/>
+          </RelativeLayout>
+
+        </TableRow>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:weightSum="4">
+
+          <TextView
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+          <EditText
+            android:id="@+id/building_edt"
+            style="@style/AddressEditText"
+            android:hint="@string/building"
+            android:nextFocusDown="@+id/street_edt"/>
+        </TableRow>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:weightSum="4">
+
+          <TextView
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+          <EditText
+            android:id="@+id/street_edt"
+            style="@style/AddressEditText"
+            android:hint="@string/street"
+            android:nextFocusDown="@+id/street2_edt"/>
+        </TableRow>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:weightSum="4">
+
+          <TextView
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+          <EditText
+            android:id="@+id/street2_edt"
+            style="@style/AddressEditText"
+            android:hint="@string/street"
+            android:nextFocusDown="@+id/country_edt"/>
+        </TableRow>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:weightSum="4">
+
+          <TextView
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+          <EditText
+            android:id="@+id/country_edt"
+            style="@style/AddressEditText"
+            android:hint="@string/country"
+            android:nextFocusDown="@+id/postal_code_edt"/>
+        </TableRow>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/padding_10dp"
+          android:paddingTop="@dimen/padding_10dp"
+          android:weightSum="4">
+
+          <TextView
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+          <EditText
+            android:id="@+id/postal_code_edt"
+            style="@style/AddressEditText"
+            android:hint="@string/postal_code"
+            android:imeOptions="actionDone"/>
+        </TableRow>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+      </LinearLayout>
+
+      <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+          android:id="@+id/location_address_map"
+          android:name="com.google.android.gms.maps.MapFragment"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_204dp"/>
+
+        <ImageView
+          android:id="@+id/transparent_iv"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@color/transparent" />
+
+      </FrameLayout>
+
+      <TextView
+        android:id="@+id/refresh_map_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/padding_10dp"
+        android:text="@string/refresh_map"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/ts_16sp"/>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_32dp"/>
+    </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+
+  <customview.CustomButton
+    android:id="@+id/next_location_address_tv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    app:custom_button_text="@string/next"/>
+
+</LinearLayout>

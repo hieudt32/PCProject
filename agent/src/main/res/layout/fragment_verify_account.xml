@@ -1,0 +1,47 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_title="@string/verify_acc"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_24dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_16dp"
+    android:paddingRight="@dimen/padding_16dp">
+
+    <TextView
+      android:id="@+id/verify_account_content"
+      style="@style/TextViewBase.TitleText"
+      android:text="@string/verify_des"/>
+
+    <TextView
+      android:id="@+id/verify_account_nric_tv"
+      style="@style/TextViewBase.Description"
+      android:layout_marginTop="@dimen/margin_17dp"
+      android:text="@string/upload_nric"/>
+
+    <TextView
+      android:id="@+id/verify_account_email_tv"
+      style="@style/TextViewBase.Description"
+      android:layout_marginTop="@dimen/margin_17dp"
+      android:text="@string/verify_email"/>
+  </LinearLayout>
+
+  <customview.CustomButton
+    android:id="@+id/verify_account_ok_bt"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    android:layout_marginTop="@dimen/margin_19dp"
+    app:custom_button_text="@string/bt_ok"/>
+
+</LinearLayout>

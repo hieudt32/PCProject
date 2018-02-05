@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <font.app.gem.widget.ui.CFButton
+        android:id="@+id/item_button"
+        android:text="@string/bt_submit"
+        android:layout_marginTop="@dimen/padding_large"
+        style="@style/ButtonBase.Round.White"/>
+</RelativeLayout>

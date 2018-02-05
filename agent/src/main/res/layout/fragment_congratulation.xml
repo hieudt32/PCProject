@@ -1,0 +1,63 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorPrimary"
+  android:orientation="vertical">
+
+  <ImageView
+    android:id="@+id/close_complete_process"
+    android:layout_width="@dimen/size_24dp"
+    android:layout_height="@dimen/size_24dp"
+    android:layout_marginStart="@dimen/margin_16dp"
+    android:layout_marginTop="@dimen/margin_30dp"
+    android:src="@drawable/ic_close_"/>
+
+  <TextView
+    android:id="@+id/congratulation_process_tv"
+    style="@style/TextViewBase.CongratulationTitle"
+    android:layout_marginTop="@dimen/margin_23dp"
+    android:text="@string/congratulation"/>
+
+  <TextView
+    android:id="@+id/complete_process_tv"
+    style="@style/TextViewBase.CongratulationTitle"
+    android:layout_below="@id/congratulation_process_tv"
+    android:layout_centerHorizontal="true"
+    android:text="@string/completed"/>
+
+  <TextView
+    android:id="@+id/content_message_complete_tv"
+    style="@style/TextViewBase.SignOTPSideTextView"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/margin_36dp"
+    android:layout_marginEnd="@dimen/margin_52dp"
+    android:layout_marginStart="@dimen/margin_52dp"
+    android:text="@string/congrat_msg"
+    android:textAlignment="center"
+    android:textColor="@color/tc_white70"/>
+
+  <TextView
+    android:id="@+id/title_message_complete_tv"
+    style="@style/TextViewBase.HeaderTitle"
+    android:layout_above="@id/content_message_complete_tv"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="@dimen/margin_12dp"
+    android:text="@string/message"/>
+
+  <com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/thumb_complete_process_iv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/title_message_complete_tv"
+    android:layout_below="@id/complete_process_tv"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="@dimen/margin_30dp"
+    android:background="@drawable/round_image_complete"
+    android:padding="@dimen/margin_35dp"
+    app:actualImageScaleType="centerCrop"
+    app:placeholderImage="@drawable/place_holder"
+    app:placeholderImageScaleType="centerCrop"
+    app:roundAsCircle="true"/>
+</RelativeLayout>

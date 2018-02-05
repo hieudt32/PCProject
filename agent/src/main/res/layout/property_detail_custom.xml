@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_14dp"
+    android:paddingEnd="@dimen/padding_24dp"
+    android:paddingStart="@dimen/padding_24dp"
+    android:paddingTop="@dimen/padding_14dp">
+
+    <TextView
+        android:id="@+id/title_item_tv"
+        style="@style/TextViewBase.NameItemView"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Price"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/content_item_tv"
+        style="@style/TextViewBase.ItemView"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="29.000 sqft" />
+</LinearLayout>

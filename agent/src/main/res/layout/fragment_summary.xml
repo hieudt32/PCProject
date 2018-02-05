@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_header_left_text="@string/delete"
+      app:custom_header_right_text="@string/preview"
+      app:custom_header_title="@string/summary"/>
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+          android:id="@+id/summary_thumb_iv"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_210dp"
+          android:adjustViewBounds="true"
+          app:placeholderImageScaleType="centerCrop"
+          app:placeholderImage="@drawable/place_holder"
+          app:actualImageScaleType="centerCrop"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <app.positiveculture.com.agent.customview.ItemSummaryCustom
+          android:id="@+id/summary_address"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_80dp"
+          app:content_item_summary="@string/fk_location"
+          app:icon_next_summary="@drawable/ic_next"
+          app:title_item_summary="@string/address"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <app.positiveculture.com.agent.customview.ItemSummaryCustom
+          android:id="@+id/summary_property_detail"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_80dp"
+          app:content_item_summary="@string/fk_property_detail"
+          app:icon_next_summary="@drawable/ic_next"
+          app:title_item_summary="@string/property_detail"/>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_80dp"
+          android:orientation="horizontal">
+
+          <app.positiveculture.com.agent.customview.ItemSummaryCustom
+            android:id="@+id/summary_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:content_item_summary="@string/fk_price"
+            app:title_item_summary="@string/price"/>
+
+          <app.positiveculture.com.agent.customview.ItemSummaryCustom
+            android:id="@+id/summary_valuation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:content_item_summary="@string/fk_price2"
+            app:icon_next_summary="@drawable/ic_next"
+            app:title_item_summary="@string/valuation"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <app.positiveculture.com.agent.customview.ItemSummaryCustom
+          android:id="@+id/summary_description"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_80dp"
+          app:content_item_summary="@string/fk_description"
+          app:icon_next_summary="@drawable/ic_next"
+          app:title_item_summary="@string/description"/>
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/buyer_summary_rv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginTop="@dimen/margin_16dp"
+          android:background="@color/white"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_88dp"
+          android:background="@color/white"
+          android:orientation="horizontal">
+
+          <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_height="@dimen/size_56dp"
+            android:layout_width="@dimen/size_56dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_24dp"
+            android:src="@drawable/ic_avatar"
+            app:placeholderImage="@drawable/ic_avatar"
+            app:placeholderImageScaleType="centerCrop"
+            app:roundAsCircle="true"/>
+
+          <TextView
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_16dp"
+            android:text="@string/add_owners"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/ts_16sp"/>
+
+          <ImageView
+            android:id="@+id/add_owner_iv"
+            android:layout_width="@dimen/size_24dp"
+            android:layout_height="@dimen/size_24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/margin_24dp"
+            android:src="@drawable/ic_next"/>
+        </LinearLayout>
+
+        <View style="@style/DivideLine.LightGray"/>
+
+        <TextView
+          style="@style/TextViewBase"
+          android:layout_marginBottom="@dimen/margin_24dp"
+          android:layout_marginLeft="@dimen/margin_24dp"
+          android:layout_marginRight="@dimen/margin_24dp"
+          android:layout_marginTop="@dimen/margin_8dp"
+          android:text="@string/summary_des"
+          android:textSize="@dimen/ts_14sp"/>
+
+
+      </LinearLayout>
+    </ScrollView>
+
+    <customview.CustomButton
+      android:id="@+id/create_listing"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_48dp"
+      app:custom_button_text="@string/create_listing"/>
+  </LinearLayout>
+
+</FrameLayout>

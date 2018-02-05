@@ -1,0 +1,114 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:id="@+id/price_ll"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/price_hd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="Price"/>
+
+  <app.positiveculture.com.agent.customview.StepIndicatorHorizontal
+    android:id="@+id/price_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    style="@style/TextViewBase.TitleText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margin_49dp"
+    android:text="@string/price"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_56dp"
+    android:layout_marginLeft="@dimen/margin_18dp"
+    android:layout_marginRight="@dimen/margin_30dp"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextViewBase.TitleText"
+      android:layout_width="@dimen/size_56dp"
+      android:layout_height="match_parent"
+      android:background="@color/greyish"
+      android:gravity="center"
+      android:text="@string/ss"/>
+
+    <EditText
+      android:id="@+id/price_edit_et"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      android:gravity="center"
+      android:hint="0"
+      android:inputType="number|numberDecimal"
+      android:maxLines="1"
+      android:nextFocusDown="@+id/valuation_edit_et"
+      android:textColor="@color/blue"
+      android:textSize="18sp"/>
+  </LinearLayout>
+
+  <TextView
+    style="@style/TextViewBase.TitleText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margin_49dp"
+    android:text="@string/valuation"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_56dp"
+    android:layout_marginEnd="@dimen/margin_30dp"
+    android:layout_marginStart="@dimen/margin_18dp"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextViewBase.TitleText"
+      android:layout_width="@dimen/size_56dp"
+      android:layout_height="match_parent"
+      android:background="@color/greyish"
+      android:gravity="center"
+      android:text="@string/ss"/>
+
+    <EditText
+      android:id="@+id/valuation_edit_et"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      android:gravity="center"
+      android:hint="0"
+      android:imeOptions="actionDone"
+      android:inputType="number|numberDecimal"
+      android:maxLines="1"
+      android:textColor="@color/blue"
+      android:textSize="18sp"/>
+  </LinearLayout>
+
+  <TextView
+    style="@style/TextViewBase.HintDescription"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margin_8dp"
+    android:layout_weight="1"
+    android:text="@string/optional"/>
+
+
+  <customview.CustomButton
+    android:id="@+id/next_price_cb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    app:custom_button_text="@string/next"/>
+</LinearLayout>

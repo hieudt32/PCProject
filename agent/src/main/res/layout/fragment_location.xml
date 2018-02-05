@@ -1,0 +1,67 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:id="@+id/location_ll"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/location_hd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/location"/>
+
+  <app.positiveculture.com.agent.customview.StepIndicatorHorizontal
+    android:id="@+id/location_step"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <EditText
+    android:id="@+id/find_property_edt"
+    style="@style/EditTextBase.CreateProperty"
+    android:hint="@string/find_property"
+    android:imeOptions="actionSearch"/>
+
+  <View style="@style/DivideLine.LightGray"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+      android:id="@+id/add_addr_bt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:gravity="center_vertical"
+      android:paddingBottom="@dimen/padding_8dp"
+      android:paddingLeft="@dimen/padding_16dp"
+      android:paddingTop="@dimen/padding_8dp">
+
+      <TextView
+        style="@style/TextViewBase.TitleText"
+        android:layout_weight="1"
+        android:text="@string/add_address_manually"/>
+
+      <ImageView
+        android:id="@+id/add_address_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:src="@drawable/ic_next"/>
+    </TableRow>
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/location_rv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+
+  </RelativeLayout>
+
+
+  <View style="@style/DivideLine.LightGray"/>
+</LinearLayout>

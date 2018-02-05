@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:custom_header_left_action_ic_src="@drawable/ic_back"
+        app:custom_header_title="@string/payment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_24dp"
+        android:paddingRight="@dimen/padding_24dp">
+
+        <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_marginTop="@dimen/margin_19dp"
+            android:text="@string/payment_des_title" />
+
+        <TextView
+            style="@style/TextViewBase.TitleText"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_49dp"
+            android:textColor="@color/tc_black54"
+            android:text="@string/payment_des" />
+    </LinearLayout>
+</LinearLayout>

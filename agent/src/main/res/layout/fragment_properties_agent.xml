@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/silver"
+              android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <customview.CustomHeaderView
+      android:id="@+id/properties_agent_hd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:custom_header_action_ic_src="@drawable/ic_add"
+      app:custom_header_left_action_ic_src="@drawable/ic_search"
+      app:custom_header_right_action_ic_src="@drawable/item_payed"
+      app:custom_header_title="Properties"/>
+
+    <TextView
+      android:id="@+id/listing_create_tv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignBottom="@id/properties_agent_hd"
+      android:background="@color/button_color"
+      android:gravity="bottom"
+      android:paddingBottom="@dimen/padding_16dp"
+      android:text="@string/listing_created"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textSize="@dimen/ts_16sp"
+      android:visibility="gone"/>
+  </RelativeLayout>
+
+
+  <LinearLayout
+    android:id="@+id/tab_layout_properties_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <android.support.design.widget.TabLayout
+      android:id="@+id/tab_layout_properties"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_44dp"
+      app:tabBackground="@color/white"
+      app:tabIndicatorColor="@color/header_color"
+      app:tabIndicatorHeight="@dimen/margin_3dp"
+      app:tabMode="fixed"
+      app:tabPaddingEnd="-1dp"
+      app:tabPaddingStart="-1dp"
+      app:tabSelectedTextColor="@color/header_color"
+      app:tabTextAppearance="@style/CustomTabTextAppearance"
+      app:tabTextColor="@color/tc_black38"/>
+
+    <app.positiveculture.com.agent.customview.CustomViewPager
+      android:id="@+id/pager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  </LinearLayout>
+
+  <include
+    android:id="@+id/properties_empty_layout"
+    layout="@layout/empty_layout"
+    android:visibility="gone"/>
+</LinearLayout>

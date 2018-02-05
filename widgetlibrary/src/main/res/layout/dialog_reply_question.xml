@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog.Layout">
+
+  <LinearLayout
+      android:background="@drawable/bg_dialog_content"
+      android:orientation="vertical"
+      android:layout_centerInParent="true"
+      style="@style/Dialog.Content">
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_title_tv"
+        android:text="@string/ask_a_question"
+        style="@style/Dialog.Text.Title"
+        android:layout_height="wrap_content"/>
+
+    <font.app.gem.widget.ui.CFEditText
+        android:id="@+id/dialog_answer_question_et"
+        android:layout_marginTop="@dimen/dialog_content_margin"
+        android:gravity="top|left"
+        android:textColorHint="@color/hint_text_alpha"
+        android:hint="@string/enter_your_answer_hint"
+        style="@style/Dialog.EditText"/>
+
+    <font.app.gem.widget.ui.CFTextView
+        android:id="@+id/dialog_submit_tv"
+        android:text="@string/bt_confirm"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/padding_large"
+        style="@style/ButtonBase.Round.Pink"/>
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/dialog_close_bt"
+      style="@style/Dialog.Icon.Close"
+      android:layout_gravity="center"/>
+
+</RelativeLayout>

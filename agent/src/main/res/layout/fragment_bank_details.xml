@@ -1,0 +1,61 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/bank_details_agent_ll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/bank_details_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_text="@string/later"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_title="@string/bank_details"/>
+
+  <TextView
+    android:id="@+id/bank_details_description"
+    style="@style/TextViewBase.Description"
+    android:layout_marginBottom="@dimen/margin_21dp"
+    android:layout_marginLeft="@dimen/margin_16dp"
+    android:layout_marginRight="@dimen/margin_16dp"
+    android:layout_marginTop="@dimen/margin_11.5dp"
+    android:text="@string/bank_details_des"
+    android:textColor="@color/tc_black54"/>
+
+  <EditText
+    android:id="@+id/bank_details_name_et"
+    style="@style/EditTextBase.BankDetails"
+    android:hint="@string/bank"
+    android:imeOptions="actionNext"
+    android:inputType="text"/>
+
+  <View
+    style="@style/DivideLine.LightGray"
+    android:layout_marginStart="@dimen/padding_16dp"/>
+
+  <EditText
+    android:id="@+id/bank_details_account_number_et"
+    style="@style/EditTextBase.BankDetails"
+    android:hint="@string/account_number"
+    android:imeOptions="actionNext"
+    android:inputType="text"/>
+
+  <View
+    style="@style/DivideLine.LightGray"
+    android:layout_marginStart="@dimen/padding_16dp"/>
+
+  <EditText
+    android:id="@+id/bank_details_account_type_et"
+    style="@style/EditTextBase.BankDetails"
+    android:hint="@string/account_type"
+    android:imeOptions="actionDone"
+    android:inputType="text"/>
+
+  <View
+    style="@style/DivideLine.LightGray"
+    android:layout_marginStart="@dimen/padding_16dp"/>
+
+</LinearLayout>

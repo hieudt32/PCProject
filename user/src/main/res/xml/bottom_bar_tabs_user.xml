@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+  <tab
+    id="@+id/tab_properties_user"
+    icon="@drawable/ic_properties"
+    title="@string/tab_properties"/>
+  <tab
+    id="@+id/tab_profile"
+    icon="@drawable/ic_profile"
+    title="@string/tab_profile" />
+  <tab
+    id="@+id/tab_settings"
+    icon="@drawable/ic_settings"
+    title="@string/tab_settings" />
+</tabs>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/search_property_hd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/search" />
+
+  <EditText
+    android:id="@+id/search_property_et"
+    style="@style/EditTextBase.CreateProperty"
+    android:hint="@string/search"
+    android:imeOptions="actionSearch" />
+
+  <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+      android:id="@+id/search_type_hdb"
+      style="@style/RadioTypeSearchProperty"
+      android:text="@string/property_type_hdb" />
+
+    <RadioButton
+      android:id="@+id/search_type_condo"
+      style="@style/RadioTypeSearchProperty"
+      android:text="@string/property_type_condo" />
+
+    <RadioButton
+      android:id="@+id/search_type_landed"
+      style="@style/RadioTypeSearchProperty"
+      android:text="@string/property_type_landed" />
+  </RadioGroup>
+
+  <com.malinskiy.superrecyclerview.SuperRecyclerView
+    android:id="@+id/search_property_rv"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+</LinearLayout>

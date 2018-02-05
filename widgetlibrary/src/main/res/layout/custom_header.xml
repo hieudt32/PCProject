@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/colorPrimary">
+  <RelativeLayout
+      android:id="@+id/header_rl"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="?android:attr/actionBarSize">
+    <RelativeLayout
+        android:id="@+id/back_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+      <ImageView
+          android:id="@+id/left_icon_iv"
+          android:layout_width="?android:attr/actionBarSize"
+          style="@style/HeaderIcon"/>
+
+      <TextView android:id="@+id/left_text_tv"
+                style="@style/TextViewBase.HeaderText"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header_title_tv"
+        style="@style/TextViewBase.HeaderTitle"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/right_icon2_iv"
+        style="@style/HeaderIcon"
+        android:layout_toStartOf="@+id/right_icon_iv"/>
+
+    <ImageView
+        android:id="@+id/right_icon_iv"
+        style="@style/HeaderIcon"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView android:id="@+id/right_text_tv"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="@dimen/margin_8dp"
+              style="@style/TextViewBase.HeaderText"/>
+  </RelativeLayout>
+</RelativeLayout>

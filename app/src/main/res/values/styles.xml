@@ -1,0 +1,66 @@
+<resources>
+  <!-- Base application theme. -->
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <style name="TextViewBase.HeaderTitle">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_20sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.TitleText">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+  </style>
+
+  <style name="TextViewBase.TitleDialog">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_17sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.MessgerDialog">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">@dimen/ts_13sp</item>
+  </style>
+
+  <style name="ButtonBase.ButtonDialog">
+    <item name="android:textColor">@color/text_btn_dialog</item>
+    <item name="android:textSize">@dimen/ts_17sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="ButtonBase.ButtonText">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_16sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="TextViewBase.SkipLogin">
+    <item name="android:layout_marginRight">@dimen/margin_24dp</item>
+    <item name="android:layout_marginTop">@dimen/margin_24dp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_14sp</item>
+  </style>
+
+  <style name="TextViewBase.StatusLogin">
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginBottom">@dimen/margin_34dp</item>
+    <item name="android:maxLines">2</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_12sp</item>
+  </style>
+
+</resources>

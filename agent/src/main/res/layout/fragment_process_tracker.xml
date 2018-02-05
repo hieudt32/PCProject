@@ -1,0 +1,96 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/process_tracker_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_action_ic_src="@drawable/ic_right_arrow_white"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/title"/>
+
+  <com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/process_tracker_property_iv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_103dp"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_16dp"
+    android:layout_marginStart="@dimen/margin_16dp"
+    android:layout_marginTop="@dimen/margin_16dp">
+
+    <TextView
+      style="@style/TextViewBase.NameItemView"
+      android:text="@string/process_tracker"
+      android:textColor="@color/tc_black87"/>
+
+    <TextView
+      android:id="@+id/status_process_tracker_tv"
+      style="@style/TextViewBase.StatusItemView"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:text="@string/selling"
+      android:textSize="@dimen/ts_16sp"/>
+
+  </RelativeLayout>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/margin_16dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <app.positiveculture.com.agent.customview.ProcessTracker
+        android:id="@+id/process_tracker_sign_otp"
+        style="@style/ProcessTracker"
+        app:first_inner_process_title="Owner Signature"
+        app:hide_top_line="true"
+        app:number_of_process="2"
+        app:overall_process_title="Sign OTP"
+        app:second_inner_process_title="Buyers Signature"/>
+
+      <app.positiveculture.com.agent.customview.ProcessTracker
+        android:id="@+id/process_tracker_payment"
+        style="@style/ProcessTracker"
+        app:number_of_process="0"
+        app:overall_process_title="Payment"/>
+
+      <app.positiveculture.com.agent.customview.ProcessTracker
+        android:id="@+id/process_tracker_conveyancing"
+        style="@style/ProcessTracker"
+        app:first_inner_process_title="5/12 Items Completed"
+        app:number_of_process="2"
+        app:overall_process_title="Conveyancing"
+        app:second_inner_process_title="Loan Information"/>
+
+      <app.positiveculture.com.agent.customview.ProcessTracker
+        android:id="@+id/process_tracker_complete"
+        style="@style/ProcessTracker"
+        app:hide_bottom_line="true"
+        app:number_of_process="0"
+        app:overall_process_title="Complete"/>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <TextView
+    android:id="@+id/process_tracker_otp_expire_date_tv"
+    style="@style/TextViewBase.FurnishingHint"
+    android:layout_gravity="end"
+    android:layout_margin="@dimen/margin_16dp"
+    android:text="@string/otp_expires"/>
+
+</LinearLayout>

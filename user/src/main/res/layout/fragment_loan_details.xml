@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/loan_details_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_title="@string/loan_details" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextViewBase.LoanDetails.TextView"
+      android:text="@string/bank" />
+
+    <EditText
+      android:id="@+id/loan_details_bank_et"
+      style="@style/TextViewBase.LoanDetails.EditText"
+      android:hint="@string/bank" />
+
+  </LinearLayout>
+
+  <View
+    android:layout_marginStart="@dimen/margin_16dp"
+    style="@style/LineDashGrey"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextViewBase.LoanDetails.TextView"
+      android:text="@string/reference" />
+
+    <EditText
+      android:id="@+id/loan_details_bank_reference"
+      style="@style/TextViewBase.LoanDetails.EditText"
+      android:hint="@string/reference_number" />
+
+  </LinearLayout>
+
+</LinearLayout>

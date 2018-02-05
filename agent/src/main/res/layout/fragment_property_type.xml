@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/silver">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <customview.CustomHeaderView
+      android:id="@+id/property_type_hd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="0dp"
+      app:custom_header_left_action_ic_src="@drawable/ic_back"
+      app:custom_header_title="@string/property_type"/>
+
+    <app.positiveculture.com.agent.customview.StepIndicatorHorizontal
+      android:id="@+id/property_type_step"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="0dp"/>
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/size_72dp"
+          android:layout_marginStart="@dimen/size_72dp"
+          android:layout_marginTop="@dimen/margin_20dp"
+          android:gravity="center"
+          android:text="@string/property_type_des"
+          android:textColor="@color/header_color"
+          android:textSize="@dimen/ts_24sp"
+          android:textStyle="bold"/>
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:paddingBottom="@dimen/padding_16dp"
+          android:paddingTop="@dimen/padding_16dp">
+
+          <RelativeLayout
+            android:id="@+id/hdb_rl"
+            android:layout_width="@dimen/size_125dp"
+            android:layout_height="@dimen/size_168dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/landed_rl">
+
+            <TextView
+              android:id="@+id/property_type_hdb"
+              style="@style/PropertyTypeTextView"
+              android:text="@string/property_type_hdb"/>
+
+            <ImageView
+              style="@style/PropertyTypeIcon"
+              android:src="@drawable/ic_hdb"/>
+          </RelativeLayout>
+
+
+          <RelativeLayout
+            android:id="@+id/condo_rl"
+            android:layout_width="@dimen/size_125dp"
+            android:layout_height="@dimen/size_168dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_toEndOf="@id/hdb_rl">
+
+            <TextView
+              android:id="@+id/property_type_condo"
+              style="@style/PropertyTypeTextView"
+              android:text="@string/property_type_condo"
+              />
+
+            <ImageView
+              style="@style/PropertyTypeIcon"
+              android:src="@drawable/ic_condo"/>
+          </RelativeLayout>
+
+          <RelativeLayout
+            android:id="@+id/landed_rl"
+            android:layout_width="@dimen/size_125dp"
+            android:layout_height="@dimen/size_168dp"
+            android:layout_below="@id/hdb_rl"
+            android:layout_marginTop="@dimen/margin_16dp">
+
+            <TextView
+              android:id="@+id/property_type_landed"
+              style="@style/PropertyTypeTextView"
+              android:text="@string/property_type_landed"/>
+
+            <ImageView
+              style="@style/PropertyTypeIcon"
+              android:src="@drawable/ic_landed"/>
+          </RelativeLayout>
+        </RelativeLayout>
+      </LinearLayout>
+    </ScrollView>
+
+    <customview.CustomButton
+      android:id="@+id/next_property_type_cb"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/size_48dp"
+      app:custom_button_text="@string/next"/>
+  </LinearLayout>
+</FrameLayout>

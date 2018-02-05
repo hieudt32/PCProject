@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Base -->
+  <style name="TextViewBase.ActionBarTitle">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/text_size_action_bar</item>
+  </style>
+  <style name="TextViewBase.LightBlack">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/light_black</item>
+    <item name="android:padding">@dimen/padding_edt</item>
+    <item name="android:textSize">16sp</item>
+  </style>
+
+  <style name="TextViewBase.ActionBarAction"></style>
+
+  <style name="TextViewBase.ProfileTalentTitle"></style>
+
+  <style name="TextViewBase.ProfileTalentName"></style>
+
+  <style name="TextViewBase.ProfileTalentAddress"></style>
+
+  <style name="TextViewBase.ProfileTalentAttribute"></style>
+
+  <style name="TextViewBase.ProfileCustomerTitle"></style>
+
+  <style name="TextViewBase.ProfileCustomerContent"></style>
+
+  <style name="TextViewBase.Bold"></style>
+
+
+  <style name="EditTextBase">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:padding">@dimen/padding_normal</item>
+  </style>
+
+  <style name="TextViewBase">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textSize">@dimen/ts_common</item>
+    <item name="android:textColor">@color/text_common</item>
+  </style>
+
+  <style name="Icon">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:padding">@dimen/padding_normal</item>
+    <item name="android:minWidth">25dp</item>
+    <item name="android:minHeight">25dp</item>
+  </style>
+
+  <!-- Header -->
+  <style name="Header">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="hdv_bg_color">@color/light_gray</item>
+    <item name="hdv_icon">@drawable/ic_back_white</item>
+    <item name="hdv_text_color">@color/common_pink</item>
+  </style>
+
+  <style name="HeaderText" parent="TextViewBase">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textColor">@color/common_pink</item>
+    <item name="android:textSize">@dimen/ts_header</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="HeaderText.TextButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:padding">@dimen/padding_normal</item>
+  </style>
+
+  <!-- Action bar -->
+  <style name="ABTitle" parent="TextViewBase">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textSize">@dimen/ts_title</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:gravity">center|left</item>
+    <item name="android:textColor">#FFF</item>
+  </style>
+
+  <style name="ABIcon" parent="Icon">
+    <item name="android:padding">@dimen/padding_large</item>
+  </style>
+
+  <!-- Common list items -->
+  <style name="Item" parent="TextViewBase">
+    <item name="android:layout_width">match_parent</item>
+  </style>
+
+  <style name="Item.Title">
+    <item name="android:textSize">@dimen/ts_big</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+  <style name="Item.SubTitle">
+    <item name="android:textColor">@color/semi_black</item>
+  </style>
+
+  <style name="Item.Avatar">
+    <item name="android:layout_width">@dimen/discover_avatar_size</item>
+    <item name="android:layout_height">@dimen/discover_avatar_size</item>
+    <item name="civ_border_color">@color/grey</item>
+    <item name="civ_border_width">1dp</item>
+    <item name="android:src">@drawable/ic_avatar</item>
+  </style>
+
+  <style name="ButtonBase">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+  </style>
+
+  <style name="ButtonBase.Round">
+    <item name="android:textSize">@dimen/ts_big</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:minHeight">0dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:paddingLeft">@dimen/padding_button_horizontal</item>
+    <item name="android:paddingRight">@dimen/padding_button_horizontal</item>
+    <item name="android:paddingBottom">@dimen/padding_normal</item>
+    <item name="android:paddingTop">@dimen/padding_normal</item>
+  </style>
+
+
+  <style name="ButtonBase.Round.Pink">
+    <item name="android:textColor">@drawable/commont_text_selector_pink</item>
+    <item name="android:background">@drawable/round_pink_button_bg</item>
+  </style>
+
+  <style name="ButtonBase.Round.Pink.Selector">
+    <item name="android:textColor">@color/choose_service_button_bg</item>
+    <item name="android:background">@drawable/choose_service_btn_bg</item>
+  </style>
+
+  <style name="ButtonBase.Round.Pink.Alone">
+    <item name="android:minWidth">155dp</item>
+    <item name="android:layout_width">wrap_content</item>
+  </style>
+
+  <style name="ButtonBase.Round.Grey">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:background">@drawable/round_grey_solid</item>
+  </style>
+
+  <style name="ButtonBase.Round.White">
+    <item name="android:textColor">@color/black</item>
+    <item name="android:background">@drawable/round_white_solid</item>
+  </style>
+
+
+  <!-- Common RecyclerView refresh & loadmore-->
+  <style name="Recycler">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="layout_moreProgress">@layout/layout_more_progress</item>
+    <item name="layout_progress">@layout/layout_progress</item>
+    <item name="mainLayoutId">@layout/layout_recyclerview_verticalscroll</item>
+    <item name="recyclerClipToPadding">false</item>
+  </style>
+
+  <!-- Bottom bar -->
+  <style name="BottomBar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">@dimen/padding_normal</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:background">@color/grey</item>
+  </style>
+
+  <!--Edit text-->
+  <style name="EditText" parent="EditTextBase">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">30dp</item>
+    <item name="android:background">@drawable/border_button_gray</item>
+    <item name="android:gravity">left</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textColorHint">@color/fc_light_gray</item>
+    <item name="android:textSize">@dimen/ts_common</item>
+  </style>
+
+  <style name="EditText.SingleLine">
+    <item name="android:lines">1</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:inputType">text</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="EditText.Write">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/ts_big</item>
+    <item name="android:background">@null</item>
+    <item name="android:padding">@dimen/padding_large</item>
+    <item name="android:drawablePadding">@dimen/padding_small</item>
+    <item name="android:inputType">text</item>
+  </style>
+
+  <style name="ButtonBase.ButtonText">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/ts_17sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+    <style name="HeaderTitleNew">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/ts_20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+  <!-- Image view -->
+  <style name="SmallAvatarImageView">
+    <item name="android:layout_width">@dimen/iv_small_avatar_size</item>
+    <item name="android:layout_height">@dimen/iv_small_avatar_size</item>
+    <item name="android:layout_marginTop">@dimen/margin_16dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_16dp</item>
+    <item name="android:layout_marginStart">@dimen/margin_24dp</item>
+    <item name="android:layout_marginEnd">@dimen/margin_16dp</item>
+  </style>
+
+  <style name="MediumAvatarImageView">
+    <item name="android:layout_width">@dimen/iv_medium_avatar_size</item>
+    <item name="android:layout_height">@dimen/iv_medium_avatar_size</item>
+    <item name="android:layout_marginTop">@dimen/margin_24dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_6dp</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:layout_centerHorizontal">true</item>
+  </style>
+
+  <style name="BigAvatarImageView">
+    <item name="android:layout_width">@dimen/iv_big_avatar_size</item>
+    <item name="android:layout_height">@dimen/iv_big_avatar_size</item>
+    <item name="android:layout_marginTop">@dimen/margin_24dp</item>
+    <item name="android:layout_marginBottom">@dimen/margin_24dp</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:layout_centerHorizontal">true</item>
+  </style>
+</resources>

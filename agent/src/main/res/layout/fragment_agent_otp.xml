@@ -1,0 +1,357 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/otp_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_right_text="@string/extent"
+    app:custom_header_title="@string/otp" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/SignOTPTitle"
+        android:text="@string/signatures" />
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/signatures_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+      <LinearLayout
+        android:id="@+id/item_assign_buyer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/padding_24dp"
+        android:paddingStart="@dimen/padding_24dp"
+        android:visibility="gone">
+
+        <View
+          android:layout_width="@dimen/size_12dp"
+          android:layout_height="@dimen/size_12dp"
+          android:layout_marginEnd="@dimen/margin_6dp"
+          android:layout_marginStart="@dimen/margin_6dp"
+          android:background="@drawable/yellow_circle_bg" />
+
+        <TextView
+          style="@style/OTPItem"
+          android:layout_marginEnd="@dimen/margin_16dp"
+          android:layout_marginStart="@dimen/margin_16dp"
+          android:layout_weight="1"
+          android:text="@string/assign_buyer"
+          android:textColor="@color/header_color"
+          android:textSize="@dimen/ts_16sp" />
+
+        <TextView
+          style="@style/OTPItem"
+          android:text="@string/buyer"
+          android:textColor="@color/tc_black54"
+          android:textSize="@dimen/ts_14sp" />
+
+      </LinearLayout>
+
+      <View style="@style/DivideLine.LightGray" />
+
+      <TextView
+        style="@style/SignOTPTitle"
+        android:text="@string/contract_details" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:orientation="horizontal">
+
+        <app.positiveculture.com.agent.customview.ItemSummaryCustom
+          android:id="@+id/otp_expiry_date_item"
+          style="@style/SignOTPItem"
+          app:content_item_bold="true"
+          app:content_item_summary="20 Mar 2017"
+          app:title_item_summary="@string/otp_expiry_date" />
+
+        <app.positiveculture.com.agent.customview.ItemSummaryCustom
+          android:id="@+id/otp_completion_date_item"
+          style="@style/SignOTPItem"
+          app:content_item_bold="true"
+          app:content_item_summary="27 Mar 2017"
+          app:title_item_summary="@string/completion_date" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <app.positiveculture.com.agent.customview.ItemSummaryCustom
+          android:id="@+id/otp_total_price_item"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:content_item_bold="true"
+          app:content_item_summary="S$1,200,000"
+          app:title_item_summary="@string/total_price" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_1dp"
+          android:layout_marginEnd="@dimen/margin_15dp"
+          android:layout_marginStart="@dimen/margin_15dp"
+          android:background="@color/bg_photo" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <app.positiveculture.com.agent.customview.ItemSummaryCustom
+            android:id="@+id/otp_option_fee_item"
+            style="@style/SignOTPItem"
+            android:layout_marginBottom="@dimen/size_0dp"
+            app:content_item_bold="true"
+            app:content_item_summary="S$1,000"
+            app:title_item_summary="@string/option_fee" />
+
+          <app.positiveculture.com.agent.customview.ItemSummaryCustom
+            android:id="@+id/otp_exercise_fee_item"
+            style="@style/SignOTPItem"
+            android:layout_marginBottom="@dimen/size_0dp"
+            app:content_item_bold="true"
+            app:content_item_summary="S$5,000"
+            app:title_item_summary="@string/exercise_fee" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/otp_view_full_contract_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_24dp"
+        android:paddingEnd="@dimen/padding_16dp">
+
+        <ImageView
+          android:layout_width="@dimen/size_24dp"
+          android:layout_height="@dimen/size_24dp"
+          android:layout_gravity="center_vertical"
+          android:src="@drawable/ic_otp_contract" />
+
+        <TextView
+          android:layout_width="@dimen/size_0dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginStart="@dimen/margin_16dp"
+          android:layout_weight="1"
+          android:text="@string/view_otp_contract"
+          android:textColor="@color/header_color"
+          android:textSize="@dimen/ts_16sp" />
+
+        <ImageView
+          android:id="@+id/otp_view_full_contract_iv"
+          android:layout_width="@dimen/size_24dp"
+          android:layout_height="@dimen/size_24dp"
+          android:layout_gravity="center_vertical"
+          android:src="@drawable/ic_next" />
+
+      </LinearLayout>
+
+      <TextView
+        style="@style/SignOTPTitle"
+        android:text="@string/parties" />
+
+      <LinearLayout
+        android:id="@+id/view_parties_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/padding_16dp">
+
+        <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/margin_16dp"
+          android:layout_weight="1">
+
+          <RelativeLayout
+            android:id="@+id/owner_avatar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/first_owner_avatar"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              app:actualImageScaleType="centerCrop"
+              app:placeholderImage="@drawable/ic_avatar"
+              app:placeholderImageScaleType="centerCrop"
+              app:roundAsCircle="true" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/second_owner_avatar"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              android:layout_marginStart="@dimen/margin_4dp_negative"
+              android:layout_toEndOf="@id/first_owner_avatar"
+              app:actualImageScaleType="centerCrop"
+              app:placeholderImage="@drawable/ic_avatar"
+              app:placeholderImageScaleType="centerCrop"
+              app:roundAsCircle="true" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/third_owner_avatar"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              android:layout_marginStart="@dimen/margin_4dp_negative"
+              android:layout_toEndOf="@id/second_owner_avatar"
+              app:actualImageScaleType="centerCrop"
+              app:placeholderImage="@drawable/ic_avatar"
+              app:placeholderImageScaleType="centerCrop"
+              app:roundAsCircle="true" />
+
+            <RelativeLayout
+              android:id="@+id/more_owner_avatar_rl"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              android:layout_marginStart="@dimen/margin_4dp_negative"
+              android:layout_toEndOf="@id/second_owner_avatar"
+              android:background="@drawable/black_transparent_circle_shape">
+
+              <TextView
+                android:id="@+id/more_owner_avatar_tv"
+                style="@style/TextViewBase"
+                android:layout_centerInParent="true"
+                android:text="@string/more"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_16sp" />
+
+            </RelativeLayout>
+
+          </RelativeLayout>
+
+          <TextView
+            style="@style/TextViewBase.SignOTPSideTextView"
+            android:layout_below="@id/owner_avatar_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_14dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="@string/owner_side" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:id="@+id/otp_buyer_side_rl"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/margin_16dp"
+          android:layout_weight="1">
+
+          <RelativeLayout
+            android:id="@+id/buyer_avatar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/first_buyer_avatar"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              app:actualImageScaleType="centerCrop"
+              app:placeholderImage="@drawable/ic_avatar"
+              app:placeholderImageScaleType="centerCrop"
+              app:roundAsCircle="true" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/second_buyer_avatar"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              android:layout_marginStart="@dimen/margin_4dp_negative"
+              android:layout_toEndOf="@id/first_buyer_avatar"
+              app:actualImageScaleType="centerCrop"
+              app:placeholderImage="@drawable/ic_avatar"
+              app:placeholderImageScaleType="centerCrop"
+              app:roundAsCircle="true" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+              android:id="@+id/third_buyer_avatar"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              android:layout_marginStart="@dimen/margin_4dp_negative"
+              android:layout_toEndOf="@id/second_buyer_avatar"
+              app:actualImageScaleType="centerCrop"
+              app:placeholderImage="@drawable/ic_avatar"
+              app:placeholderImageScaleType="centerCrop"
+              app:roundAsCircle="true" />
+
+            <RelativeLayout
+              android:id="@+id/more_buyer_avatar_rl"
+              android:layout_width="@dimen/size_48dp"
+              android:layout_height="@dimen/size_48dp"
+              android:layout_marginStart="@dimen/margin_4dp_negative"
+              android:layout_toEndOf="@id/second_buyer_avatar"
+              android:background="@drawable/black_transparent_circle_shape">
+
+              <TextView
+                android:id="@+id/more_buyer_avatar_tv"
+                style="@style/TextViewBase"
+                android:layout_centerInParent="true"
+                android:text="@string/more"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_16sp" />
+
+            </RelativeLayout>
+
+          </RelativeLayout>
+
+          <TextView
+            style="@style/TextViewBase.SignOTPSideTextView"
+            android:layout_below="@id/buyer_avatar_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_14dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="@string/buyer_side" />
+
+        </RelativeLayout>
+
+        <ImageView
+          android:id="@+id/otp_parties_next_iv"
+          android:layout_width="@dimen/size_24dp"
+          android:layout_height="@dimen/size_24dp"
+          android:layout_marginTop="@dimen/margin_28dp"
+          android:src="@drawable/ic_next" />
+
+      </LinearLayout>
+
+      <customview.CustomButton
+        android:id="@+id/verify_signing_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        app:custom_button_text="@string/verify_offline_signing" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

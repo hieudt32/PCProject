@@ -1,0 +1,147 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nric_upload_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/custom_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_text="@string/later"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_title="@string/nric"/>
+
+  <LinearLayout
+    android:id="@+id/nric_upload_agent_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_small">
+
+    <TextView
+      style="@style/TextViewBase"
+      android:layout_marginStart="@dimen/margin_15dp"
+      android:text="@string/nric"
+      android:textColor="@color/black"
+      android:textSize="@dimen/ts_16sp"/>
+
+    <EditText
+      android:id="@+id/nric_number_et"
+      style="@style/EditText.SingleLine"
+      android:layout_marginStart="@dimen/margin_30dp"
+      android:gravity="center_vertical"
+      android:hint="@string/nric"
+      android:imeOptions="actionDone"
+      android:inputType="text"
+      android:padding="0dp"
+      android:textColor="@color/black"
+      android:textSize="@dimen/ts_16sp"/>
+
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/nric_upload_user_form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <app.positiveculture.com.agent.customview.UserIdTypeSpinner
+      android:id="@+id/nric_upload_id_type_sp"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/margin_15dp"
+      android:layout_weight="1.2"
+      android:gravity="center_vertical"/>
+
+    <EditText
+      android:id="@+id/nric_upload_user_id_et"
+      style="@style/EditText.SingleLine"
+      android:layout_width="0dp"
+      android:layout_marginStart="@dimen/margin_5dp"
+      android:layout_weight="2"
+      android:gravity="center_vertical"
+      android:hint="@string/id_number"
+      android:imeOptions="actionDone"
+      android:inputType="text"
+      android:padding="0dp"
+      android:paddingEnd="@dimen/margin_5dp"
+      android:paddingStart="@dimen/margin_5dp"
+      android:textColor="@color/black"
+      android:textSize="@dimen/ts_16sp"/>
+  </LinearLayout>
+
+  <View style="@style/DivideLine.LightGray"/>
+
+  <RelativeLayout
+    android:id="@+id/nric_view_front_rl"
+    style="@style/DashBorder"
+    android:layout_marginTop="@dimen/margin_20dp"
+    android:background="@color/white">
+
+    <TextView
+      style="@style/TextViewBase"
+      android:layout_centerInParent="true"
+      android:layout_marginBottom="@dimen/margin_20dp"
+      android:text="@string/front"
+      android:textSize="@dimen/ts_16sp"
+      android:textStyle="bold"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="@dimen/margin_8dp"
+      android:background="@drawable/dash_border_bg">
+
+      <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/nric_front_view_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:actualImageScaleType="fitCenter"
+        app:progressBarAutoRotateInterval="@integer/anim_duration_1500"/>
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/nric_view_back_rl"
+    style="@style/DashBorder"
+    android:layout_marginTop="@dimen/margin_5dp"
+    android:background="@color/white">
+
+    <TextView
+      style="@style/TextViewBase"
+      android:layout_centerInParent="true"
+      android:layout_marginBottom="@dimen/margin_20dp"
+      android:text="@string/back"
+      android:textSize="@dimen/ts_16sp"
+      android:textStyle="bold"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="@dimen/margin_8dp"
+      android:background="@drawable/dash_border_bg">
+
+      <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/nric_back_view_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:actualImageScaleType="fitCenter"
+        app:progressBarAutoRotateInterval="@integer/anim_duration_1500"/>
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+</LinearLayout>

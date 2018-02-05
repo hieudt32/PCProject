@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/silver"
+              android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/register_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_action_ic_src="@drawable/ic_back"
+    app:custom_header_title="@string/register"/>
+
+  <TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_10dp"
+    android:paddingLeft="@dimen/padding_16dp"
+    android:paddingTop="@dimen/padding_10dp">
+
+    <TextView
+      style="@style/TextViewBase.TitleText"
+      android:text="@string/cea_no"/>
+
+    <EditText
+      android:id="@+id/register_cea_number_et"
+      style="@style/EditTextBase.Register"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="@dimen/margin_30dp"
+      android:background="@android:color/transparent"
+      android:inputType="text"
+      android:padding="@dimen/padding_0dp"/>
+  </TableRow>
+
+  <customview.CustomButton
+    android:id="@+id/next_cb"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48dp"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:background="@color/button_color"
+    app:custom_button_text="@string/enter"/>
+</LinearLayout>

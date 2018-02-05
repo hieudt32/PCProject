@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_grey">
+
+    <customview.CustomHeaderView
+        android:id="@+id/create_new_client_header_view"
+        app:custom_header_title="@string/create_new_client"
+        app:custom_header_right_text="@string/next"
+        app:custom_header_left_action_ic_src="@drawable/ic_close_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <app.positiveculture.com.agent.customview.UserIdTypeSpinner
+            android:id="@+id/create_new_client_type_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"/>
+        
+        <EditText
+            android:id="@+id/create_new_client_id_number_et"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_weight="2"
+            style="@style/InformationFormEditText" />
+
+    </LinearLayout>
+
+</LinearLayout>

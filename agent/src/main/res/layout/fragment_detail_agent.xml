@@ -1,0 +1,306 @@
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/bg_grey">
+
+  <ScrollView
+    android:id="@+id/detail_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tc_black12">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+          android:id="@+id/thumb_detail_iv"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/size_281.3dp"
+          app:actualImageScaleType="centerCrop"
+          app:placeholderImage="@drawable/place_holder"
+          app:placeholderImageScaleType="centerCrop"/>
+
+        <ImageView
+          android:id="@+id/back_detail_iv"
+          android:layout_width="@dimen/size_48dp"
+          android:layout_height="@dimen/size_48dp"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginStart="@dimen/margin_4dp"
+          android:layout_marginTop="@dimen/margin_18dp"
+          android:padding="@dimen/padding_10dp"
+          android:src="@drawable/ic_back"/>
+      </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_157dp"
+        android:background="@color/white">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="@dimen/margin_24dp"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/name_detail_tv"
+            style="@style/TextViewBase.NameItemView"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/the_beaumont"
+            android:textSize="@dimen/ts_24sp"/>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+              android:id="@+id/price_property_tv"
+              style="@style/TextViewBase.PrinceItemView"
+              android:layout_weight="1"
+              android:text="@string/fk_price"/>
+
+            <TextView
+              android:id="@+id/date_property_tv"
+              style="@style/TextViewBase.ItemView"
+              android:layout_marginStart="@dimen/margin_16dp"
+              android:layout_weight="2"
+              android:text="@string/_3_month_ago"/>
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <ImageView
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:src="@drawable/ic_bedroom_agent"/>
+
+              <TextView
+                android:id="@+id/number_bedroom_tv"
+                style="@style/TextViewBase.ItemView"
+                android:layout_marginEnd="@dimen/margin_2dp"
+                android:layout_marginStart="@dimen/margin_12dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/rooms"/>
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <ImageView
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:src="@drawable/ic_bathroom_agent"/>
+
+              <TextView
+                android:id="@+id/number_bathroom_tv"
+                style="@style/TextViewBase.ItemView"
+                android:layout_marginStart="@dimen/margin_12dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/bathrooms"/>
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+      </RelativeLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp"
+        android:orientation="horizontal">
+
+        <app.positiveculture.com.agent.customview.TwoTextViewCustom
+          android:id="@+id/built_up_custom_tt"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          app:content_item="@string/fk_price2"
+          app:title_item="Built up"/>
+
+        <app.positiveculture.com.agent.customview.TwoTextViewCustom
+          android:id="@+id/floor_size_custom_tt"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          app:content_item="@string/fk_price"
+          app:title_item="Floor Size"/>
+      </LinearLayout>
+
+      <View style="@style/DivideLine.Grayish"/>
+
+      <RelativeLayout
+        android:id="@+id/description_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_178dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="@dimen/margin_24dp"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/description_detail_title_tv"
+            style="@style/TextViewBase.NameItemView"
+            android:maxLines="1"
+            android:text="@string/description"
+            android:textSize="@dimen/ts_16sp"/>
+
+          <TextView
+            android:id="@+id/description_property_tv"
+            style="@style/TextViewBase.ItemView"
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/size_2dp"
+            android:maxLines="4"
+            android:text="@string/summary_des"
+            android:textSize="@dimen/ts_16sp"/>
+
+          <TextView
+            android:id="@+id/red_more_detail_tv"
+            style="@style/TextViewBase.StatusItemView"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/read_more"/>
+
+        </LinearLayout>
+
+      </RelativeLayout>
+
+      <View style="@style/DivideLine.Grayish"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp"
+        android:orientation="horizontal">
+
+        <app.positiveculture.com.agent.customview.TwoTextViewCustom
+          android:id="@+id/price_custom_tt"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          app:content_item="@string/fk_price"
+          app:title_item="@string/price"/>
+
+        <app.positiveculture.com.agent.customview.TwoTextViewCustom
+          android:id="@+id/valuation_custom_tt"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          app:content_item="@string/fk_price2"
+          app:title_item="@string/valuation"/>
+      </LinearLayout>
+
+      <View style="@style/DivideLine.Grayish"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_300dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="80dp">
+
+          <app.positiveculture.com.agent.customview.TwoTextViewCustom
+            android:id="@+id/location_custom_tt"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            app:content_item="@string/_145_deveonshire_road"
+            app:title_item="@string/location"/>
+
+          <ImageView
+            android:id="@+id/next_location_iv"
+            style="@style/ImageViewNext"
+            android:src="@drawable/ic_next"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <fragment
+            android:id="@+id/detail_map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_195dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"/>
+
+          <ImageView
+            android:id="@+id/detail_transparent_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_195dp"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"/>
+
+        </RelativeLayout>
+
+      </LinearLayout>
+
+      <View style="@style/DivideLine.Grayish"/>
+
+      <RelativeLayout
+        android:id="@+id/document_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp">
+
+        <app.positiveculture.com.agent.customview.TwoTextViewCustom
+          android:id="@+id/document_custom_tt"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:content_item="@string/_3_month_ago"
+          app:title_item="@string/document"/>
+
+        <ImageView
+          android:id="@+id/next_document_iv"
+          style="@style/ImageViewNext"
+          android:src="@drawable/ic_next"/>
+      </RelativeLayout>
+
+      <include
+        layout="@layout/item_owner_buyer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp"
+        android:visibility="gone"/>
+
+      <Button
+        android:id="@+id/create_otp_bt"
+        style="@style/StyleButtonCreateOTP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:text="@string/create_otp"/>
+    </LinearLayout>
+  </ScrollView>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+  <!-- TODO: Update blank fragment layout -->
+  <com.malinskiy.superrecyclerview.SuperRecyclerView
+    android:id="@+id/ag_list_buyer_rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+  <include
+    android:id="@+id/buyer_empty_layout"
+    layout="@layout/empty_layout"
+    android:visibility="gone"/>
+</FrameLayout>

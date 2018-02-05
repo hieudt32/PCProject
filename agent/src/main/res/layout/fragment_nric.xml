@@ -1,0 +1,85 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nric_app_ll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/silver"
+  android:orientation="vertical">
+
+  <customview.CustomHeaderView
+    android:id="@+id/nric_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:custom_header_left_text="@string/later"
+    app:custom_header_right_text="@string/save"
+    app:custom_header_title="@string/nric"/>
+
+  <TextView
+    android:id="@+id/textView2"
+    style="@style/TextViewBase.Description"
+    android:layout_marginBottom="@dimen/margin_21dp"
+    android:layout_marginLeft="@dimen/margin_24dp"
+    android:layout_marginRight="@dimen/margin_24dp"
+    android:layout_marginTop="@dimen/margin_11.5dp"
+    android:text="@string/nric_des"
+    android:textColor="@color/tc_black54"/>
+
+  <TableRow
+    android:id="@+id/nric_agent_from"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding_10dp"
+    android:paddingLeft="@dimen/padding_16dp"
+    android:paddingTop="@dimen/padding_10dp">
+
+    <TextView
+      style="@style/TextViewBase.TitleText"
+      android:text="@string/nric"/>
+
+    <EditText
+      android:id="@+id/nric_number_et"
+      style="@style/EditTextBase.Register"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="@dimen/margin_30dp"
+      android:background="@android:color/transparent"
+      android:hint="@string/number"
+      android:imeOptions="actionDone"
+      android:inputType="number"
+      android:padding="@dimen/padding_0dp"/>
+  </TableRow>
+
+  <LinearLayout
+    android:id="@+id/nric_user_from"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <app.positiveculture.com.agent.customview.UserIdTypeSpinner
+      android:id="@+id/nric_id_type_sp"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/margin_15dp"
+      android:layout_weight="1.2"
+      android:gravity="center_vertical"/>
+
+    <EditText
+      android:id="@+id/nric_user_id_et"
+      style="@style/EditText.SingleLine"
+      android:layout_width="0dp"
+      android:layout_marginStart="@dimen/margin_5dp"
+      android:layout_weight="2"
+      android:gravity="center_vertical"
+      android:hint="@string/id_number"
+      android:imeOptions="actionDone"
+      android:inputType="text"
+      android:padding="0dp"
+      android:paddingEnd="@dimen/margin_5dp"
+      android:paddingStart="@dimen/margin_5dp"
+      android:textColor="@color/black"
+      android:textSize="@dimen/ts_16sp"/>
+  </LinearLayout>
+</LinearLayout>
